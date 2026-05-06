@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada Adventure - September 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --green:   #2C5F2E;
+      --blue:    #0077B6;
+      --teal:    #1B9AAA;
+      --cream:   #F8F4EF;
+      --card-bg: #FFFFFF;
+      --tbd:     #9E9E9E;
+      --text:    #2A2A2A;
+      --text-light: #555555;
+      --border:  #E0D8CF;
+      --shadow:  0 4px 18px rgba(0,0,0,0.10);
+      --shadow-hover: 0 8px 28px rgba(0,0,0,0.16);
+      --radius:  12px;
+      --radius-sm: 6px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--teal);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover { color: var(--blue); text-decoration: underline; }
+
+    /* ============================================================
+       HERO SECTION
+    ============================================================ */
+    .hero {
+      position: relative;
+      width: 100%;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: #1a3a1a;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('stanley_park.png');
+      background-size: cover;
+      background-position: center 40%;
+      filter: brightness(0.55) saturate(1.1);
+      transform: scale(1.02);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        160deg,
+        rgba(27, 154, 170, 0.25) 0%,
+        rgba(0, 0, 0, 0.15) 40%,
+        rgba(44, 95, 46, 0.35) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 60px 24px 50px;
+      max-width: 860px;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.80);
+      margin-bottom: 14px;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 6vw, 4.4rem);
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1.12;
+      text-shadow: 0 3px 20px rgba(0,0,0,0.55);
+      margin-bottom: 18px;
+    }
+
+    .hero-title span {
+      color: #7FDBDA;
+    }
+
+    .hero-dates {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      color: rgba(255,255,255,0.92);
+      margin-bottom: 28px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .hero-party {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.30);
+      border-radius: 50px;
+      padding: 10px 24px;
+      color: #FFFFFF;
+      font-size: 0.95rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-caption {
+      position: absolute;
+      bottom: 12px;
+      right: 16px;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.55);
+      font-style: italic;
+      z-index: 2;
+    }
+
+    /* ============================================================
+       MAIN CONTAINER
+    ============================================================ */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ============================================================
+       SECTION TITLES
+    ============================================================ */
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 6px;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 28px;
+    }
+
+    .section-divider {
+      width: 56px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--teal), var(--blue));
+      border-radius: 2px;
+      margin: 10px 0 24px;
+    }
+
+    /* ============================================================
+       TRAVEL PARTY SECTION
+    ============================================================ */
+    .party-section {
+      background: var(--card-bg);
+      padding: 48px 0 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .party-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 8px;
+    }
+
+    .party-card {
+      background: linear-gradient(135deg, var(--cream) 0%, #EEF7F8 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .party-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .party-icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .party-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--green);
+    }
+
+    .party-role {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      margin-top: 3px;
+      font-style: italic;
+    }
+
+    /* ============================================================
+       BOOK IN ADVANCE CALLOUT
+    ============================================================ */
+    .book-section {
+      padding: 40px 0;
+    }
+
+    .book-card {
+      background: linear-gradient(135deg, #FFF8E7 0%, #FFF3D0 100%);
+      border: 2px solid #F0A500;
+      border-left: 6px solid #F0A500;
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      box-shadow: 0 4px 20px rgba(240, 165, 0, 0.15);
+    }
+
+    .book-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .book-card-icon {
+      font-size: 1.8rem;
+    }
+
+    .book-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #7A4F00;
+    }
+
+    .book-card-subtitle {
+      font-size: 0.85rem;
+      color: #9A6800;
+      margin-top: 2px;
+    }
+
+    .book-checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .book-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: #5A3A00;
+    }
+
+    .book-checkbox {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #C88000;
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 1px;
+      background: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .book-checklist li strong {
+      color: #3A2000;
+    }
+
+    .book-checklist li a {
+      color: #C88000;
+      font-weight: 700;
+    }
+    .book-checklist li a:hover { color: #7A4F00; }
+
+    /* ============================================================
+       ITINERARY DAYS
+    ============================================================ */
+    .itinerary-section {
+      padding: 40px 0 20px;
+    }
+
+    .day-block {
+      margin-bottom: 48px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: var(--card-bg);
+    }
+
+    .day-header {
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .day-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: rgba(255,255,255,0.25);
+      line-height: 1;
+      min-width: 48px;
+    }
+
+    .day-info {
+      flex: 1;
+    }
+
+    .day-date {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 3px;
+    }
+
+    .day-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.2;
+    }
+
+    .day-badges {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
+
+    .day-badge {
+      background: rgba(255,255,255,0.20);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 50px;
+      padding: 5px 14px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.90);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .day-start {
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(255,255,255,1);
+      border-radius: 50px;
+      padding: 5px 14px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green);
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+    }
+
+    .day-start.early {
+      background: #FFE082;
+      color: #6B4226;
+      border-color: #FFCA28;
+    }
+
+    /* Day color themes */
+    .day-1  .day-header { background: linear-gradient(135deg, #2C5F2E 0%, #3D7A40 100%); }
+    .day-2  .day-header { background: linear-gradient(135deg, #0077B6 0%, #0096C7 100%); }
+    .day-3  .day-header { background: linear-gradient(135deg, #1B9AAA 0%, #0E7C8A 100%); }
+    .day-4  .day-header { background: linear-gradient(135deg, #6B4226 0%, #8B5E3C 100%); }
+    .day-5  .day-header { background: linear-gradient(135deg, #4A4E69 0%, #6B6F8A 100%); }
+    .day-6  .day-header { background: linear-gradient(135deg, #2C5F2E 0%, #1B9AAA 100%); }
+    .day-7  .day-header { background: linear-gradient(135deg, #0077B6 0%, #2C5F2E 100%); }
+    .day-8  .day-header { background: linear-gradient(135deg, #9E9E9E 0%, #757575 100%); }
+
+    /* Day photo banner */
+    .day-photo {
+      position: relative;
+      width: 100%;
+      height: 260px;
+      overflow: hidden;
+    }
+
+    .day-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .day-photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.65));
+      color: rgba(255,255,255,0.90);
+      font-size: 0.78rem;
+      font-style: italic;
+      padding: 20px 16px 10px;
+      text-align: right;
+    }
+
+    /* Day body */
+    .day-body {
+      padding: 24px 28px 28px;
+    }
+
+    /* Activity cards */
+    .activities {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .activity-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .activity-card:hover {
+      box-shadow: 0 3px 14px rgba(0,0,0,0.09);
+      transform: translateX(3px);
+    }
+
+    .activity-card.tbd {
+      background: #F5F5F5;
+      border-color: #E0E0E0;
+      opacity: 0.82;
+    }
+
+    .activity-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+      line-height: 1;
+    }
+
+    .activity-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .activity-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+    }
+
+    .activity-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .activity-card.tbd .activity-name {
+      color: var(--tbd);
+      font-style: italic;
+    }
+
+    .tbd-badge {
+      background: #E0E0E0;
+      color: #757575;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 50px;
+      flex-shrink: 0;
+    }
+
+    .highlight-badge {
+      background: linear-gradient(90deg, #F0A500, #E08000);
+      color: #FFFFFF;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 2px 9px;
+      border-radius: 50px;
+      flex-shrink: 0;
+    }
+
+    .activity-desc {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+
+    .activity-card.tbd .activity-desc {
+      color: #BDBDBD;
+      font-style: italic;
+    }
+
+    .activity-tip {
+      font-size: 0.82rem;
+      color: var(--teal);
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+
+    .activity-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--teal);
+      border: 1px solid var(--teal);
+      border-radius: 50px;
+      padding: 3px 12px;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+    }
+
+    .activity-link:hover {
+      background: var(--teal);
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    /* Time label */
+    .time-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 8px;
+      margin-top: 18px;
+      padding-left: 2px;
+    }
+
+    .time-label:first-child {
+      margin-top: 0;
+    }
+
+    /* ============================================================
+       BONUS / OPTIONAL STOPS SECTION
+    ============================================================ */
+    .bonus-section {
+      padding: 20px 0 40px;
+    }
+
+    .bonus-card {
+      background: repeating-linear-gradient(
+        135deg,
+        #FAF6F0 0px,
+        #FAF6F0 12px,
+        #F2EDE4 12px,
+        #F2EDE4 24px
+      );
+      border: 2px dashed #B8A88F;
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .bonus-card::before {
+      content: "OPTIONAL";
+      position: absolute;
+      top: -12px;
+      left: 28px;
+      background: #B8A88F;
+      color: #FFFFFF;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      padding: 3px 12px;
+      border-radius: 50px;
+    }
+
+    .bonus-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .bonus-icon {
+      font-size: 1.8rem;
+    }
+
+    .bonus-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #6B4226;
+    }
+
+    .bonus-subtitle {
+      font-size: 0.85rem;
+      color: #8B7355;
+      margin-top: 2px;
+      font-style: italic;
+    }
+
+    .bonus-stop {
+      background: rgba(255,255,255,0.75);
+      border: 1px dashed #B8A88F;
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .bonus-stop-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .bonus-stop-content {
+      flex: 1;
+    }
+
+    .bonus-stop-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #5A3A1F;
+      margin-bottom: 4px;
+    }
+
+    .bonus-stop-desc {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .bonus-stop-note {
+      font-size: 0.82rem;
+      font-style: italic;
+      color: #8B7355;
+      margin-bottom: 8px;
+    }
+
+    /* ============================================================
+       QUICK LINKS SECTION
+    ============================================================ */
+    .quicklinks-section {
+      padding: 40px 0 48px;
+      background: var(--card-bg);
+      border-top: 1px solid var(--border);
+    }
+
+    .quicklinks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .quicklink-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text);
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      display: block;
+    }
+
+    .quicklink-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--teal);
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .quicklink-icon {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .quicklink-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--green);
+      margin-bottom: 4px;
+    }
+
+    .quicklink-sub {
+      font-size: 0.78rem;
+      color: var(--text-light);
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      background: var(--green);
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      padding: 32px 20px;
+    }
+
+    .footer-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+
+    .footer-sub {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.60);
+    }
+
+    .footer-hearts {
+      margin-top: 14px;
+      font-size: 1.1rem;
+      color: #7FDBDA;
+    }
+
+    /* ============================================================
+       UTILITY
+    ============================================================ */
+    .mt-0 { margin-top: 0 !important; }
+    .mb-0 { margin-bottom: 0 !important; }
+
+    /* ============================================================
+       PRINT STYLES
+    ============================================================ */
+    @media print {
+      body { background: #FFFFFF; font-size: 13px; }
+      .hero { min-height: 300px; }
+      .hero-bg { filter: brightness(0.45); }
+      .day-block { box-shadow: none; border: 1px solid #CCC; page-break-inside: avoid; }
+      .day-photo { height: 180px; }
+      .activity-card:hover, .party-card:hover, .quicklink-card:hover { transform: none; box-shadow: none; }
+      .book-card { border: 2px solid #F0A500; }
+      .bonus-card { border: 2px dashed #B8A88F; page-break-inside: avoid; }
+      a { color: inherit; }
+      .activity-link { border-color: #999; color: #333; }
+      footer { background: #2C5F2E; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 640px) {
+      .day-header { padding: 16px 18px; }
+      .day-body { padding: 18px 16px 20px; }
+      .book-card { padding: 20px 18px; }
+      .bonus-card { padding: 22px 18px; }
+      .party-grid { grid-template-columns: 1fr 1fr; }
+      .quicklinks-grid { grid-template-columns: 1fr 1fr; }
+      .hero-content { padding: 48px 16px 40px; }
+      .day-badges { flex-direction: row; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">A Family Adventure Awaits</p>
+      <h1 class="hero-title">Canada<br><span>Adventure</span></h1>
+      <p class="hero-dates">September 11 &ndash; 18, 2026</p>
+      <div class="hero-party">
+        <span>&#127968;</span>
+        <span>Brandon &amp; Megan &nbsp;&bull;&nbsp; Nancy &amp; Kirk</span>
+      </div>
+    </div>
+    <p class="hero-caption">Stanley Park, Vancouver, BC</p>
+  </section>
+
+  <!-- ============================================================
+       TRAVEL PARTY
+  ============================================================ -->
+  <section class="party-section">
+    <div class="container">
+      <h2 class="section-title">The Travel Party</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Four adventurers, eight days, two incredible cities.</p>
+      <div class="party-grid">
+        <div class="party-card">
+          <span class="party-icon">&#128149;</span>
+          <div class="party-name">Brandon</div>
+          <div class="party-role">Navigator &amp; Driver</div>
+        </div>
+        <div class="party-card">
+          <span class="party-icon">&#127803;</span>
+          <div class="party-name">Megan</div>
+          <div class="party-role">Chief Experience Officer</div>
+        </div>
+        <div class="party-card">
+          <span class="party-icon">&#9992;&#65039;</span>
+          <div class="party-name">Nancy (Mom)</div>
+          <div class="party-role">Flying in from SeaTac</div>
+        </div>
+        <div class="party-card">
+          <span class="party-icon">&#9992;&#65039;</span>
+          <div class="party-name">Kirk (Dad)</div>
+          <div class="party-role">Flying in from SeaTac</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BOOK IN ADVANCE
+  ============================================================ -->
+  <section class="book-section">
+    <div class="container">
+      <div class="book-card">
+        <div class="book-card-header">
+          <span class="book-card-icon">&#128204;</span>
+          <div>
+            <div class="book-card-title">Things to Book in Advance</div>
+            <div class="book-card-subtitle">Don&rsquo;t wait &mdash; these fill up fast, especially in September!</div>
+          </div>
+        </div>
+        <ul class="book-checklist">
+          <li>
+            <div class="book-checkbox"></div>
+            <span><strong>Butchart Gardens Afternoon Tea</strong> &mdash; Dining Room Restaurant (Day 4) &mdash; <a href="https://butchartgardens.com/" target="_blank" rel="noopener">butchartgardens.com</a></span>
+          </li>
+          <li>
+            <div class="book-checkbox"></div>
+            <span><strong>Capilano Suspension Bridge</strong> &mdash; Buy tickets online in advance (Day 5) &mdash; <a href="https://www.capbridge.com/" target="_blank" rel="noopener">capbridge.com</a></span>
+          </li>
+          <li>
+            <div class="book-checkbox"></div>
+            <span><strong>Black Ball Ferry (MV Coho)</strong> &mdash; Port Angeles to Victoria, Sept 12 &mdash; <a href="https://www.cohoferry.com/" target="_blank" rel="noopener">cohoferry.com</a></span>
+          </li>
+          <li>
+            <div class="book-checkbox"></div>
+            <span><strong>BC Ferries</strong> &mdash; Swartz Bay to Tsawwassen, Sept 15 &mdash; <a href="https://www.bcferries.com/" target="_blank" rel="noopener">bcferries.com</a></span>
+          </li>
+          <li>
+            <div class="book-checkbox"></div>
+            <span><strong>The Teahouse Restaurant</strong> &mdash; Stanley Park, Vancouver (Day 6) &mdash; <a href="https://www.vancouverdine.com/teahouse/" target="_blank" rel="noopener">vancouverdine.com/teahouse</a></span>
+          </li>
+          <li>
+            <div class="book-checkbox"></div>
+            <span><strong>Stonehouse Restaurant &amp; Pub</strong> &mdash; Sidney, BC (Day 2 arrival dinner) &mdash; call ahead to reserve &mdash; <a href="https://www.yelp.com/biz/stonehouse-restaurant-and-pub-sidney?osq=food" target="_blank" rel="noopener">Yelp listing</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ITINERARY
+  ============================================================ -->
+  <section class="itinerary-section">
+    <div class="container">
+      <h2 class="section-title">Day-by-Day Itinerary</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Eight days of Pacific Northwest magic &mdash; from Victoria&rsquo;s gardens to Vancouver&rsquo;s skyline.</p>
+
+      <!-- ---- DAY 1 ---- -->
+      <div class="day-block day-1">
+        <div class="day-header">
+          <div class="day-number">01</div>
+          <div class="day-info">
+            <div class="day-date">Thursday, September 11, 2026</div>
+            <div class="day-title">Arrival &amp; Preparation</div>
+          </div>
+          <div class="day-badges">
+            <div class="day-badge">Rest Up</div>
+          </div>
+        </div>
+        <div class="day-body">
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#9992;&#65039;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Nancy &amp; Kirk Fly into SeaTac</div>
+                </div>
+                <div class="activity-desc">Mom and Dad arrive at Seattle-Tacoma International Airport. Welcome to the Pacific Northwest!</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127968;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Brandon &amp; Megan Prepare</div>
+                </div>
+                <div class="activity-desc">Pack up, double-check the checklist, and get excited for the adventure ahead.</div>
+              </div>
+            </div>
+            <div class="activity-card tbd">
+              <div class="activity-icon">&#128564;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Evening Plans</div>
+                  <span class="tbd-badge">TBD</span>
+                </div>
+                <div class="activity-desc">Rest up &mdash; big drive tomorrow!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- DAY 2 ---- -->
+      <div class="day-block day-2">
+        <div class="day-header">
+          <div class="day-number">02</div>
+          <div class="day-info">
+            <div class="day-date">Friday, September 12, 2026</div>
+            <div class="day-title">Travel Day to Victoria</div>
+          </div>
+          <div class="day-badges">
+            <div class="day-start early">&#9200; Start: 6:00 AM</div>
+            <div class="day-badge">Ferry Day</div>
+          </div>
+        </div>
+        <div class="day-photo">
+          <img src="victoria_vrbo_front_door.png" alt="Victoria VRBO - covered porch with teal door">
+          <div class="day-photo-caption">Our Victoria home base &mdash; the charming teal-door VRBO</div>
+        </div>
+        <div class="day-body">
+          <div class="time-label">Early Morning &mdash; 6:00 AM</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#128664;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">6:00 AM &mdash; Depart Kent for SeaTac</div>
+                </div>
+                <div class="activity-desc">Brandon and Megan hit the road early to meet Mom and Dad at the airport.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#9992;&#65039;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">~7:00-8:00 AM &mdash; Pick Up Mom &amp; Dad at SeaTac</div>
+                </div>
+                <div class="activity-desc">Reunite at Seattle-Tacoma International Airport and load up for the drive north.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127758;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">~8:00 AM &mdash; Route 101, Olympic Peninsula</div>
+                </div>
+                <div class="activity-desc">Wind along the stunning Olympic Peninsula coastline to Port Angeles. Approximately 2.5 hours of gorgeous Pacific Northwest scenery.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#128205;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">~11:00 AM &mdash; Arrive Port Angeles</div>
+                </div>
+                <div class="activity-desc">Grab a quick lunch and prep for the ferry crossing.</div>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Afternoon</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#9973;&#65039;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Black Ball Ferry &mdash; MV Coho</div>
+                  <span class="tbd-badge">Time TBD</span>
+                </div>
+                <div class="activity-desc">Board the iconic MV Coho for the 1.5-hour crossing from Port Angeles, WA to Victoria, BC. Watch for orcas and enjoy the Strait of Juan de Fuca.</div>
+                <a class="activity-link" href="https://www.cohoferry.com/" target="_blank" rel="noopener">&#128279; cohoferry.com</a>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127968;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Check In &mdash; Victoria VRBO</div>
+                </div>
+                <div class="activity-desc">Settle into our charming Victoria home base with the iconic teal door and covered porch.</div>
+                <a class="activity-link" href="https://www.vrbo.com/9760447ha" target="_blank" rel="noopener">&#128279; View VRBO Listing</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Evening</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#127860;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Stonehouse Restaurant and Pub &mdash; Sidney, BC</div>
+                  <span class="highlight-badge">Arrival Dinner</span>
+                </div>
+                <div class="activity-desc">A charming seaside pub in the little town of Sidney, right on the Saanich Peninsula. Sidney is an easy evening drive from Victoria and makes for a perfect first-night-in-Canada dinner &mdash; casual, cozy, and a lovely way to ease into Vancouver Island after a long travel day.</div>
+                <div class="activity-tip">&#128204; Call ahead to reserve if possible.</div>
+                <a class="activity-link" href="https://www.yelp.com/biz/stonehouse-restaurant-and-pub-sidney?osq=food" target="_blank" rel="noopener">&#128279; View on Yelp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- DAY 3 ---- -->
+      <div class="day-block day-3">
+        <div class="day-header">
+          <div class="day-number">03</div>
+          <div class="day-info">
+            <div class="day-date">Saturday, September 13, 2026</div>
+            <div class="day-title">Botanical Beach</div>
+          </div>
+          <div class="day-badges">
+            <div class="day-start">&#9200; Start: 8:00 AM</div>
+            <div class="day-badge">Tidal Pools</div>
+          </div>
+        </div>
+        <div class="day-photo">
+          <img src="botanical_beach_tidal_pools.png" alt="Botanical Beach - person standing on rocky tidal pools at Port Renfrew">
+          <div class="day-photo-caption">Botanical Beach Provincial Park &mdash; world-class tidal pools, Port Renfrew, BC</div>
+        </div>
+        <div class="day-body">
+          <div class="time-label">Morning</div>
+          <div class="activities">
+            <div class="activity-card tbd">
+              <div class="activity-icon">&#9749;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">8:00 AM &mdash; Victoria Morning Coffee</div>
+                  <span class="tbd-badge">TBD</span>
+                </div>
+                <div class="activity-desc">Find a cozy Victoria coffee shop to kick off the day.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#128664;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">~8:30 AM &mdash; Drive to Port Renfrew</div>
+                </div>
+                <div class="activity-desc">Approximately 1.5 hours from Victoria along the scenic West Coast Road. Aim to arrive around 10:00 AM.</div>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Midday &mdash; ~10:00 AM to ~1:00 PM</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#127754;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Botanical Beach Provincial Park</div>
+                  <span class="highlight-badge">Highlight</span>
+                </div>
+                <div class="activity-desc">One of the most spectacular tidal pool ecosystems on the Pacific Coast. Explore sea stars, anemones, urchins, and incredible marine life in natural rock pools carved by the Pacific Ocean. <strong>Plan on about 3 hours at the tide pools</strong> &mdash; enough time to explore, but leaves room for a relaxed afternoon back in Victoria.</div>
+                <div class="activity-tip">&#128204; Check tide tables before going &mdash; low tide is essential! Wear sturdy, closed-toe shoes with good grip.</div>
+                <a class="activity-link" href="https://vancouverislandbucketlist.com/experiences/botanical-beach/" target="_blank" rel="noopener">&#128279; Visitor Guide</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Afternoon</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#128664;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">~1:00 PM &mdash; Return to Victoria</div>
+                </div>
+                <div class="activity-desc">Drive back to Victoria (~1.5 hrs). Afternoon/early evening is yours &mdash; relax, explore the Inner Harbour, or wander downtown.</div>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Evening</div>
+          <div class="activities">
+            <div class="activity-card tbd">
+              <div class="activity-icon">&#127860;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Dinner &mdash; Port Renfrew or Victoria</div>
+                  <span class="tbd-badge">TBD</span>
+                </div>
+                <div class="activity-desc">Dine locally in Port Renfrew on the way back, or save it for Victoria. Whatever fits the group&rsquo;s energy.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- DAY 4 ---- -->
+      <div class="day-block day-4">
+        <div class="day-header">
+          <div class="day-number">04</div>
+          <div class="day-info">
+            <div class="day-date">Sunday, September 14, 2026</div>
+            <div class="day-title">Gardens Day</div>
+          </div>
+          <div class="day-badges">
+            <div class="day-start">&#9200; Start: 8:00 AM</div>
+            <div class="day-badge">Butterflies &amp; Blooms</div>
+          </div>
+        </div>
+        <div class="day-photo">
+          <img src="butchart_gardens.png" alt="Butchart Gardens - stunning sunken garden with colorful flower beds">
+          <div class="day-photo-caption">The Butchart Gardens &mdash; the legendary Sunken Garden, Brentwood Bay, BC</div>
+        </div>
+        <div class="day-body">
+          <div class="time-label">Morning</div>
+          <div class="activities">
+            <div class="activity-card tbd">
+              <div class="activity-icon">&#9749;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">8:00 AM &mdash; Coffee / Breakfast</div>
+                  <span class="tbd-badge">TBD</span>
+                </div>
+                <div class="activity-desc">A relaxed Victoria morning before the drive to the peninsula.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#128664;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">~9:00 AM &mdash; Drive to Brentwood Bay</div>
+                </div>
+                <div class="activity-desc">About a 30-minute drive north from Victoria to the Saanich Peninsula gardens.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#129419;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Victoria Butterfly Gardens</div>
+                  <span class="highlight-badge">Megan&rsquo;s Pick</span>
+                </div>
+                <div class="activity-desc">A tropical indoor conservatory in Brentwood Bay filled with free-flying exotic butterflies, lush hanging flowers, and vibrant tropical plants. A magical, immersive experience for all ages.</div>
+                <a class="activity-link" href="https://butterflygardens.com/" target="_blank" rel="noopener">&#128279; butterflygardens.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Afternoon</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#127803;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">The Butchart Gardens</div>
+                  <span class="highlight-badge">Must-See</span>
+                </div>
+                <div class="activity-desc">One of the world&rsquo;s most celebrated gardens &mdash; the legendary Sunken Garden, Rose Garden, Japanese Garden, and Italian Garden. Just 2 km from Butterfly Gardens. Spectacular in September with late-season blooms.</div>
+                <a class="activity-link" href="https://butchartgardens.com/" target="_blank" rel="noopener">&#128279; butchartgardens.com</a>
+              </div>
+            </div>
+            <div class="activity-card" style="border-left: 3px solid #F0A500;">
+              <div class="activity-icon">&#9749;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Afternoon Tea &mdash; The Dining Room Restaurant</div>
+                  <span class="highlight-badge">Book Now!</span>
+                </div>
+                <div class="activity-desc">Megan&rsquo;s highlight &mdash; the legendary Butchart Gardens afternoon tea experience. Elegant, historic, and utterly delightful. This fills up months in advance.</div>
+                <div class="activity-tip">&#9888;&#65039; BOOK IN ADVANCE &mdash; this is a must-reserve experience!</div>
+                <a class="activity-link" href="https://butchartgardens.com/" target="_blank" rel="noopener">&#128279; Reserve at butchartgardens.com</a>
+              </div>
+            </div>
+            <div class="activity-card tbd" style="border-left: 3px solid #1B9AAA;">
+              <div class="activity-icon">&#9201;&#65039;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Pacing Note</div>
+                </div>
+                <div class="activity-desc">Budget <strong>2-3 hours total</strong> between the two gardens. Enjoy it, but don&rsquo;t try to see every corner &mdash; this is meant to be a lovely, relaxed day.</div>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Evening &mdash; Flexible</div>
+          <div class="activities">
+            <div class="activity-card tbd">
+              <div class="activity-icon">&#127860;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Dinner &mdash; Your Choice</div>
+                  <span class="tbd-badge">TBD</span>
+                </div>
+                <div class="activity-desc">Two great options: dine out somewhere in Victoria, or have a cozy <strong>&ldquo;dinner at home&rdquo;</strong> at the VRBO &mdash; cook in, open some wine, put your feet up. After a busy weekend, a chill VRBO night sounds pretty great.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- DAY 5 ---- -->
+      <div class="day-block day-5">
+        <div class="day-header">
+          <div class="day-number">05</div>
+          <div class="day-info">
+            <div class="day-date">Monday, September 15, 2026</div>
+            <div class="day-title">Travel Day to North Vancouver + Capilano</div>
+          </div>
+          <div class="day-badges">
+            <div class="day-start">&#9200; Start: 8:00 AM</div>
+            <div class="day-badge">Ferry + Capilano</div>
+          </div>
+        </div>
+        <div class="day-photo">
+          <img src="capilano_suspension_bridge.png" alt="Capilano Suspension Bridge over forested gorge">
+          <div class="day-photo-caption">Capilano Suspension Bridge &mdash; 137 metres above the Capilano River, North Vancouver</div>
+        </div>
+        <div class="day-body">
+          <div class="time-label">Morning</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#128230;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">8:00 AM &mdash; Check Out of Victoria VRBO</div>
+                </div>
+                <div class="activity-desc">Pack up, grab coffee [TBD], and say goodbye to our charming Victoria home base. Drive to Swartz Bay Ferry Terminal (~30 min north of Victoria).</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#9973;&#65039;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Late Morning &mdash; BC Ferries: Swartz Bay to Tsawwassen</div>
+                  <span class="tbd-badge">Time TBD</span>
+                </div>
+                <div class="activity-desc">The scenic BC Ferries crossing through the Gulf Islands &mdash; one of the most beautiful ferry routes in the world. Approximately 1.5 hours. Walk the decks and enjoy the views.</div>
+                <a class="activity-link" href="https://www.bcferries.com/" target="_blank" rel="noopener">&#128279; bcferries.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Early Afternoon</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#128663;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Drive Tsawwassen &rarr; North Vancouver</div>
+                </div>
+                <div class="activity-desc">About 45 minutes via Highway 99 and the Lions Gate Bridge.</div>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Afternoon</div>
+          <div class="activities">
+            <div class="activity-card" style="border-left: 3px solid #F0A500;">
+              <div class="activity-icon">&#127795;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Capilano Suspension Bridge Park</div>
+                  <span class="highlight-badge">Book Now!</span>
+                </div>
+                <div class="activity-desc">Walk the iconic 137-metre suspension bridge swaying above the Capilano River gorge. Then explore the Treetops Adventure (suspension bridges through old-growth forest canopy) and the thrilling Cliffwalk along granite canyon walls. <strong>Budget 1-2 hours here</strong> &mdash; focused on the main bridge and a quick treetop walk after a long travel day.</div>
+                <div class="activity-tip">&#9888;&#65039; BUY TICKETS IN ADVANCE online &mdash; timed entry fills up fast in September!</div>
+                <a class="activity-link" href="https://www.capbridge.com/" target="_blank" rel="noopener">&#128279; capbridge.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Late Afternoon / Evening</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#127968;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Check In &mdash; North Vancouver VRBO</div>
+                  <span class="tbd-badge">VRBO TBD</span>
+                </div>
+                <div class="activity-desc">Drop bags, freshen up, and gear up for a well-earned dinner.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127836;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Dinner &mdash; Ramen Danbo</div>
+                  <span class="highlight-badge">Travel Day Treat</span>
+                </div>
+                <div class="activity-desc">Authentic Fukuoka-style tonkotsu ramen. Rich, deeply flavored pork bone broth, fully customizable. A satisfying and deeply restorative end to a long travel day.</div>
+                <a class="activity-link" href="https://ramendanbo.com/our-menu-vancouver/" target="_blank" rel="noopener">&#128279; ramendanbo.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- DAY 6 ---- -->
+      <div class="day-block day-6">
+        <div class="day-header">
+          <div class="day-number">06</div>
+          <div class="day-info">
+            <div class="day-date">Tuesday, September 16, 2026</div>
+            <div class="day-title">Stanley Park + Teahouse + Granville Island</div>
+          </div>
+          <div class="day-badges">
+            <div class="day-start">&#9200; Start: 8:00 AM</div>
+            <div class="day-badge">Vancouver Icons</div>
+          </div>
+        </div>
+        <div class="day-body">
+          <div class="time-label">Morning</div>
+          <div class="activities">
+            <div class="activity-card tbd">
+              <div class="activity-icon">&#9749;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">8:00 AM &mdash; Coffee</div>
+                  <span class="tbd-badge">TBD</span>
+                </div>
+                <div class="activity-desc">Fuel up for a full Vancouver day.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#128663;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">~9:00 AM &mdash; Drive Across Lions Gate Bridge</div>
+                </div>
+                <div class="activity-desc">~20 minutes from North Vancouver into Stanley Park.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127795;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Stanley Park &mdash; Vancouver</div>
+                  <span class="highlight-badge">Highlight</span>
+                </div>
+                <div class="activity-desc">One of North America&rsquo;s greatest urban parks. Walk or cycle the 9 km seawall with stunning views of English Bay and the North Shore mountains. Visit the totem poles, explore old-growth forest, and soak in the autumn foliage.</div>
+                <a class="activity-link" href="https://vancouver.ca/parks-recreation-culture/stanley-park.aspx" target="_blank" rel="noopener">&#128279; Stanley Park Info</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Lunch / Wine Hour</div>
+          <div class="activities">
+            <div class="activity-card" style="border-left: 3px solid #F0A500;">
+              <div class="activity-icon">&#127863;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">The Teahouse Restaurant &mdash; Stanley Park</div>
+                  <span class="highlight-badge">Reserve!</span>
+                </div>
+                <div class="activity-desc">A historic English Bay landmark inside Stanley Park. Stunning ocean and mountain views. Recommended for brunch or the wine hour &mdash; dinner is pricey but the setting is unmatched.</div>
+                <div class="activity-tip">&#128204; RESERVATIONS RECOMMENDED.</div>
+                <a class="activity-link" href="https://www.vancouverdine.com/teahouse/" target="_blank" rel="noopener">&#128279; Reserve at vancouverdine.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Afternoon / Evening</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#128663;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Drive to Granville Island</div>
+                </div>
+                <div class="activity-desc">About 15 minutes from Stanley Park.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127866;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Granville Island Brewing</div>
+                  <span class="highlight-badge">Flexible Meal</span>
+                </div>
+                <div class="activity-desc">Canada&rsquo;s original craft brewery (est. 1984). Lunch OR dinner at the taproom &mdash; use flexibly depending on how the Teahouse pacing goes. While you&rsquo;re on Granville Island, the famous Public Market and artisan shops are right there to explore.</div>
+                <a class="activity-link" href="https://www.granvilleislandbrewing.ca/en-CA" target="_blank" rel="noopener">&#128279; granvilleislandbrewing.ca</a>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127968;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Return to North Vancouver VRBO</div>
+                </div>
+                <div class="activity-desc">Wind down after a big Vancouver day.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- DAY 7 ---- -->
+      <div class="day-block day-7">
+        <div class="day-header">
+          <div class="day-number">07</div>
+          <div class="day-info">
+            <div class="day-date">Wednesday, September 17, 2026</div>
+            <div class="day-title">Vancouver Cafe + Steamworks + Night Market</div>
+          </div>
+          <div class="day-badges">
+            <div class="day-start">&#9200; Start: 8:00 AM</div>
+            <div class="day-badge">City Day</div>
+          </div>
+        </div>
+        <div class="day-photo">
+          <img src="richmond_night_market.png" alt="Richmond Night Market - aerial view of colorful vendor tents at night">
+          <div class="day-photo-caption">Richmond Night Market &mdash; one of North America&rsquo;s largest night markets, Richmond, BC</div>
+        </div>
+        <div class="day-body">
+          <div class="time-label">Morning &mdash; Slow Start</div>
+          <div class="activities">
+            <div class="activity-card tbd">
+              <div class="activity-icon">&#9749;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">8:00 AM &mdash; Morning Cafe</div>
+                  <span class="tbd-badge">TBD</span>
+                </div>
+                <div class="activity-desc">A deliberately slow morning &mdash; find a cafe near the VRBO or head into Vancouver for a scenic morning. Busy evening ahead, so lean into the calm.</div>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Midday &mdash; Explore Vancouver</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#127959;&#65039;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Vancouver at Leisure</div>
+                </div>
+                <div class="activity-desc">Suggestions: <strong>Gastown</strong> (historic cobblestone streets, the steam clock, indie shops), <strong>Downtown / Waterfront</strong> (Canada Place, the harbour, views of the mountains). Just wander and enjoy.</div>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Afternoon / Early Evening</div>
+          <div class="activities">
+            <div class="activity-card" style="border-left: 3px solid #F0A500;">
+              <div class="activity-icon">&#127829;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Steamworks Brew Pub &mdash; Gastown</div>
+                  <span class="highlight-badge">Megan&rsquo;s Poutine!</span>
+                </div>
+                <div class="activity-desc">A landmark craft brewpub in Gastown&rsquo;s historic cobblestone district. Megan&rsquo;s must-have: <strong>POUTINE</strong>. Craft beers on tap, great food, and a perfect excuse to explore Gastown&rsquo;s heritage architecture.</div>
+                <a class="activity-link" href="https://steamworks.com/brew-pub/" target="_blank" rel="noopener">&#128279; steamworks.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Evening &mdash; 3 to 4 Hours</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#127749;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Richmond Night Market</div>
+                  <span class="highlight-badge">Highlight</span>
+                </div>
+                <div class="activity-desc">One of North America&rsquo;s largest and most vibrant night markets. Hundreds of food stalls, games, live entertainment, and dazzling lights. An unforgettable sensory experience &mdash; Asian street food, international bites, and festive atmosphere. <strong>Budget 3-4 hours</strong> to really enjoy it.</div>
+                <div class="activity-tip">&#9888;&#65039; NOTE: Confirm Wednesday availability &mdash; the market typically runs Friday&ndash;Sunday. If Wed is not available, shift to an available Fri/Sat.</div>
+                <a class="activity-link" href="https://www.richmondnightmarket.com/" target="_blank" rel="noopener">&#128279; richmondnightmarket.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- DAY 8 ---- -->
+      <div class="day-block day-8">
+        <div class="day-header">
+          <div class="day-number">08</div>
+          <div class="day-info">
+            <div class="day-date">Thursday, September 18, 2026</div>
+            <div class="day-title">Farewell Day &mdash; I-5 South to SeaTac</div>
+          </div>
+          <div class="day-badges">
+            <div class="day-start">&#9200; Start: 8:00 AM</div>
+            <div class="day-badge">Homeward Bound</div>
+          </div>
+        </div>
+        <div class="day-body">
+          <div class="time-label">Morning</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#128230;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">8:00 AM &mdash; Check Out of North Vancouver VRBO</div>
+                </div>
+                <div class="activity-desc">Pack up, take one last look at those North Shore mountains, and head out for the final leg.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127807;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Coffee or Breakfast &mdash; The Naam (optional)</div>
+                  <span class="tbd-badge">TBD</span>
+                </div>
+                <div class="activity-desc">Grab coffee somewhere convenient, OR stop at <strong>The Naam</strong> in Kitsilano for breakfast on the way out. A Vancouver institution since 1968 &mdash; vegetarian with Thai influence, open 24 hours. A great morning bite before crossing the border.</div>
+                <a class="activity-link" href="https://thenaam.com/" target="_blank" rel="noopener">&#128279; thenaam.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Midday &mdash; The Long Drive</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#128663;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Drive I-5 South to SeaTac Airport</div>
+                </div>
+                <div class="activity-desc">Approximately 3-4 hours including the border crossing at Peace Arch or Pacific Highway. Everyone drives south together &mdash; Mom and Dad fly out of SeaTac, and Brandon &amp; Megan continue home to Kent.</div>
+                <div class="activity-tip">&#128204; Use the NEXUS lane if available. Check CBP wait times before departure. Declare anything purchased in Canada.</div>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Afternoon</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#9992;&#65039;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Drop Mom &amp; Dad at SeaTac Airport</div>
+                  <span class="tbd-badge">Flight TBD</span>
+                </div>
+                <div class="activity-desc">Drop Nancy and Kirk at Seattle-Tacoma International Airport for their flight home. Hugs, memories, and promises to do it again!</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127968;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Brandon &amp; Megan Home to Kent, WA</div>
+                </div>
+                <div class="activity-desc">SeaTac is right next door to Kent &mdash; a short drive and the adventure is officially complete. Memories made for a lifetime.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </section>
+
+  <!-- ============================================================
+       BONUS / OPTIONAL STOPS
+  ============================================================ -->
+  <section class="bonus-section">
+    <div class="container">
+      <div class="bonus-card">
+        <div class="bonus-header">
+          <span class="bonus-icon">&#10024;</span>
+          <div>
+            <div class="bonus-title">Bonus / Optional Stops</div>
+            <div class="bonus-subtitle">If time allows &mdash; not formally scheduled</div>
+          </div>
+        </div>
+        <div class="bonus-stop">
+          <div class="bonus-stop-icon">&#127836;</div>
+          <div class="bonus-stop-content">
+            <div class="bonus-stop-name">Chinatown BBQ &mdash; Vancouver Chinatown</div>
+            <div class="bonus-stop-desc">Family-style Cantonese roasted meats &mdash; duck, pork belly, char siu. A communal, delicious experience in Vancouver&rsquo;s historic Chinatown. Perfect for a party of four.</div>
+            <div class="bonus-stop-note">Not formally scheduled &mdash; could substitute for any Vancouver meal, or drop in on Day 6 or 7 if the group has extra time or appetite.</div>
+            <a class="activity-link" href="https://chinatownbbq.com/new-menu/" target="_blank" rel="noopener">&#128279; chinatownbbq.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       QUICK LINKS
+  ============================================================ -->
+  <section class="quicklinks-section">
+    <div class="container">
+      <h2 class="section-title">Quick Links</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">All the essential bookmarks in one place.</p>
+      <div class="quicklinks-grid">
+        <a class="quicklink-card" href="https://www.vrbo.com/9760447ha" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127968;</span>
+          <div class="quicklink-name">Victoria VRBO</div>
+          <div class="quicklink-sub">vrbo.com/9760447ha</div>
+        </a>
+        <a class="quicklink-card" href="https://www.cohoferry.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#9973;&#65039;</span>
+          <div class="quicklink-name">Black Ball Ferry</div>
+          <div class="quicklink-sub">Port Angeles &rarr; Victoria</div>
+        </a>
+        <a class="quicklink-card" href="https://www.bcferries.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#9973;&#65039;</span>
+          <div class="quicklink-name">BC Ferries</div>
+          <div class="quicklink-sub">Swartz Bay &rarr; Tsawwassen</div>
+        </a>
+        <a class="quicklink-card" href="https://www.yelp.com/biz/stonehouse-restaurant-and-pub-sidney?osq=food" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127860;</span>
+          <div class="quicklink-name">Stonehouse Pub</div>
+          <div class="quicklink-sub">Sidney, BC &mdash; Day 2</div>
+        </a>
+        <a class="quicklink-card" href="https://vancouverislandbucketlist.com/experiences/botanical-beach/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127754;</span>
+          <div class="quicklink-name">Botanical Beach</div>
+          <div class="quicklink-sub">Port Renfrew, BC</div>
+        </a>
+        <a class="quicklink-card" href="https://butterflygardens.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#129419;</span>
+          <div class="quicklink-name">Butterfly Gardens</div>
+          <div class="quicklink-sub">Brentwood Bay, BC</div>
+        </a>
+        <a class="quicklink-card" href="https://butchartgardens.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127803;</span>
+          <div class="quicklink-name">Butchart Gardens</div>
+          <div class="quicklink-sub">Brentwood Bay, BC</div>
+        </a>
+        <a class="quicklink-card" href="https://www.capbridge.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127795;</span>
+          <div class="quicklink-name">Capilano Bridge</div>
+          <div class="quicklink-sub">North Vancouver, BC &mdash; Day 5</div>
+        </a>
+        <a class="quicklink-card" href="https://ramendanbo.com/our-menu-vancouver/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127836;</span>
+          <div class="quicklink-name">Ramen Danbo</div>
+          <div class="quicklink-sub">Vancouver &mdash; Day 5</div>
+        </a>
+        <a class="quicklink-card" href="https://vancouver.ca/parks-recreation-culture/stanley-park.aspx" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127795;</span>
+          <div class="quicklink-name">Stanley Park</div>
+          <div class="quicklink-sub">Vancouver, BC</div>
+        </a>
+        <a class="quicklink-card" href="https://www.vancouverdine.com/teahouse/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127863;</span>
+          <div class="quicklink-name">The Teahouse</div>
+          <div class="quicklink-sub">Stanley Park, Vancouver</div>
+        </a>
+        <a class="quicklink-card" href="https://www.granvilleislandbrewing.ca/en-CA" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127866;</span>
+          <div class="quicklink-name">Granville Island</div>
+          <div class="quicklink-sub">Vancouver, BC &mdash; Day 6</div>
+        </a>
+        <a class="quicklink-card" href="https://steamworks.com/brew-pub/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127829;</span>
+          <div class="quicklink-name">Steamworks Brew Pub</div>
+          <div class="quicklink-sub">Gastown, Vancouver</div>
+        </a>
+        <a class="quicklink-card" href="https://www.richmondnightmarket.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127749;</span>
+          <div class="quicklink-name">Richmond Night Market</div>
+          <div class="quicklink-sub">Richmond, BC</div>
+        </a>
+        <a class="quicklink-card" href="https://thenaam.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127807;</span>
+          <div class="quicklink-name">The Naam</div>
+          <div class="quicklink-sub">Kitsilano &mdash; Day 8</div>
+        </a>
+        <a class="quicklink-card" href="https://chinatownbbq.com/new-menu/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127836;</span>
+          <div class="quicklink-name">Chinatown BBQ</div>
+          <div class="quicklink-sub">Optional / Bonus</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="footer-title">Canada Adventure &mdash; September 2026</div>
+    <div class="footer-sub">Brandon &amp; Megan &nbsp;&bull;&nbsp; Nancy &amp; Kirk &nbsp;&bull;&nbsp; September 11&ndash;18, 2026</div>
+    <div class="footer-sub" style="margin-top:6px;">Kent &nbsp;&rarr;&nbsp; Port Angeles &nbsp;&rarr;&nbsp; Victoria &nbsp;&rarr;&nbsp; Port Renfrew &nbsp;&rarr;&nbsp; Brentwood Bay &nbsp;&rarr;&nbsp; North Vancouver &nbsp;&rarr;&nbsp; Vancouver &nbsp;&rarr;&nbsp; SeaTac</div>
+    <div class="footer-hearts">&#10084;&#65039; &nbsp; Made with love for a family adventure &nbsp; &#10084;&#65039;</div>
+  </footer>
+
+</body>
+</html>
