@@ -42,6 +42,20 @@
       --shadow-hover: 0 8px 28px rgba(0,0,0,0.16);
       --radius:  12px;
       --radius-sm: 6px;
+      /* Family pick badge colors */
+      --kirks-pick-bg: #FFF3CD;
+      --kirks-pick-border: #D4A017;
+      --kirks-pick-text: #7A4F00;
+      --moms-pick-bg: #FCE4EC;
+      --moms-pick-border: #E91E8C;
+      --moms-pick-text: #880E4F;
+      --megans-pick-bg: #E0F7FA;
+      --megans-pick-border: #1B9AAA;
+      --megans-pick-text: #006064;
+      /* Poutine watch */
+      --poutine-bg: #FFF8E1;
+      --poutine-border: #FFB300;
+      --poutine-text: #6D4C00;
     }
 
     html {
@@ -492,6 +506,13 @@
       opacity: 0.82;
     }
 
+    /* Optional / soft card style for Grouse Mountain etc. */
+    .activity-card.optional {
+      background: #F9F7F4;
+      border: 2px dashed #C8B89A;
+      opacity: 0.92;
+    }
+
     .activity-icon {
       font-size: 1.5rem;
       flex-shrink: 0;
@@ -545,6 +566,81 @@
       text-transform: uppercase;
       padding: 2px 9px;
       border-radius: 50px;
+      flex-shrink: 0;
+    }
+
+    /* Optional pill badge */
+    .optional-badge {
+      background: #EDE8E0;
+      color: #7A6A55;
+      border: 1px dashed #B8A88F;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 2px 9px;
+      border-radius: 50px;
+      flex-shrink: 0;
+    }
+
+    /* Family pick badges */
+    .kirks-pick-badge {
+      background: var(--kirks-pick-bg);
+      color: var(--kirks-pick-text);
+      border: 1px solid var(--kirks-pick-border);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 2px 9px;
+      border-radius: 50px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .moms-pick-badge {
+      background: var(--moms-pick-bg);
+      color: var(--moms-pick-text);
+      border: 1px solid var(--moms-pick-border);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 2px 9px;
+      border-radius: 50px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .megans-pick-badge {
+      background: var(--megans-pick-bg);
+      color: var(--megans-pick-text);
+      border: 1px solid var(--megans-pick-border);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 2px 9px;
+      border-radius: 50px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    /* Poutine Watch banner */
+    .poutine-watch {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--poutine-bg);
+      border: 1px solid var(--poutine-border);
+      border-left: 4px solid var(--poutine-border);
+      border-radius: var(--radius-sm);
+      padding: 10px 16px;
+      margin-bottom: 16px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--poutine-text);
+    }
+
+    .poutine-watch-icon {
+      font-size: 1.2rem;
       flex-shrink: 0;
     }
 
@@ -664,45 +760,12 @@
       font-style: italic;
     }
 
-    .bonus-stop {
-      background: rgba(255,255,255,0.75);
-      border: 1px dashed #B8A88F;
-      border-radius: var(--radius-sm);
-      padding: 16px 18px;
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-    }
-
-    .bonus-stop-icon {
-      font-size: 1.5rem;
-      flex-shrink: 0;
-    }
-
-    .bonus-stop-content {
-      flex: 1;
-    }
-
-    .bonus-stop-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: #5A3A1F;
-      margin-bottom: 4px;
-    }
-
-    .bonus-stop-desc {
-      font-size: 0.88rem;
-      color: var(--text-light);
-      line-height: 1.5;
-      margin-bottom: 8px;
-    }
-
-    .bonus-stop-note {
-      font-size: 0.82rem;
-      font-style: italic;
+    .bonus-empty {
+      font-size: 0.95rem;
       color: #8B7355;
-      margin-bottom: 8px;
+      font-style: italic;
+      text-align: center;
+      padding: 12px 0 4px;
     }
 
     /* ============================================================
@@ -895,11 +958,15 @@
         <ul class="book-checklist">
           <li>
             <div class="book-checkbox"></div>
-            <span><strong>Butchart Gardens Afternoon Tea</strong> &mdash; Dining Room Restaurant (Day 4) &mdash; <a href="https://butchartgardens.com/" target="_blank" rel="noopener">butchartgardens.com</a></span>
+            <span><strong>Butchart Gardens Afternoon Tea</strong> &mdash; Dining Room Restaurant (Day 4, Sept 14) &mdash; <a href="https://butchartgardens.com/" target="_blank" rel="noopener">butchartgardens.com</a></span>
           </li>
           <li>
             <div class="book-checkbox"></div>
-            <span><strong>Capilano Suspension Bridge</strong> &mdash; Buy tickets online in advance (Day 5) &mdash; <a href="https://www.capbridge.com/" target="_blank" rel="noopener">capbridge.com</a></span>
+            <span><strong>Fairmont Empress Dinner / Tea</strong> &mdash; Reservations recommended (Day 4, Sept 14) &mdash; <a href="https://www.fairmont.com/en/hotels/victoria/fairmont-empress/dining.html" target="_blank" rel="noopener">fairmont.com &mdash; Empress Dining</a></span>
+          </li>
+          <li>
+            <div class="book-checkbox"></div>
+            <span><strong>Capilano Suspension Bridge</strong> &mdash; Buy tickets online in advance (Day 5, Sept 15) &mdash; <a href="https://www.capbridge.com/" target="_blank" rel="noopener">capbridge.com</a></span>
           </li>
           <li>
             <div class="book-checkbox"></div>
@@ -911,7 +978,15 @@
           </li>
           <li>
             <div class="book-checkbox"></div>
-            <span><strong>The Teahouse Restaurant</strong> &mdash; Stanley Park, Vancouver (Day 6) &mdash; <a href="https://www.vancouverdine.com/teahouse/" target="_blank" rel="noopener">vancouverdine.com/teahouse</a></span>
+            <span><strong>The Teahouse Restaurant</strong> &mdash; Stanley Park, Vancouver (Day 6, Sept 16) &mdash; <a href="https://www.vancouverdine.com/teahouse/" target="_blank" rel="noopener">vancouverdine.com/teahouse</a></span>
+          </li>
+          <li>
+            <div class="book-checkbox"></div>
+            <span><strong>Spinnakers Gastro Brewpub</strong> &mdash; Reservation for lunch/dinner (Day 3, Sept 13) &mdash; <a href="https://www.spinnakers.com/" target="_blank" rel="noopener">spinnakers.com</a></span>
+          </li>
+          <li>
+            <div class="book-checkbox"></div>
+            <span><strong>E-bike Rentals</strong> &mdash; Consider reserving morning slot for Stanley Park (Day 6, Sept 16) &mdash; e.g., Spokes Bicycle Rentals or Cycle City Rentals</span>
           </li>
           <li>
             <div class="book-checkbox"></div>
@@ -1082,7 +1157,7 @@
           <div class="day-number">03</div>
           <div class="day-info">
             <div class="day-date">Saturday, September 13, 2026</div>
-            <div class="day-title">Botanical Beach</div>
+            <div class="day-title">Botanical Beach + Spinnakers + Beacon Hill</div>
           </div>
           <div class="day-badges">
             <div class="day-start">&#9200; Start: 8:00 AM</div>
@@ -1131,7 +1206,7 @@
               </div>
             </div>
           </div>
-          <div class="time-label">Afternoon</div>
+          <div class="time-label">Afternoon &mdash; Return to Victoria (~1:30&ndash;2:00 PM)</div>
           <div class="activities">
             <div class="activity-card">
               <div class="activity-icon">&#128664;</div>
@@ -1139,20 +1214,41 @@
                 <div class="activity-header">
                   <div class="activity-name">~1:00 PM &mdash; Return to Victoria</div>
                 </div>
-                <div class="activity-desc">Drive back to Victoria (~1.5 hrs). Afternoon/early evening is yours &mdash; relax, explore the Inner Harbour, or wander downtown.</div>
+                <div class="activity-desc">Drive back to Victoria (~1.5 hrs). Arrive early-to-mid afternoon, ready for lunch or an early dinner.</div>
+              </div>
+            </div>
+            <div class="activity-card" style="border-left: 3px solid #D4A017;">
+              <div class="activity-icon">&#127866;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">&#127866; Spinnakers Gastro Brewpub &amp; Guesthouses</div>
+                  <span class="kirks-pick-badge">&#127866; Kirk&rsquo;s / Dad&rsquo;s Pick</span>
+                </div>
+                <div class="activity-desc">Canada&rsquo;s oldest brewpub (est. 1984) &mdash; right on Victoria&rsquo;s waterfront. Brewed-on-site beers, locally-sourced food, and an oceanfront setting that&rsquo;s hard to beat. Perfect for a late lunch or early dinner after returning from Port Renfrew around 1:30&ndash;2:00 PM.</div>
+                <div class="activity-tip">&#128204; Reservation recommended for lunch/dinner.</div>
+                <a class="activity-link" href="https://www.spinnakers.com/" target="_blank" rel="noopener">&#128279; spinnakers.com</a>
               </div>
             </div>
           </div>
-          <div class="time-label">Evening</div>
+          <div class="time-label">Late Afternoon</div>
           <div class="activities">
-            <div class="activity-card tbd">
-              <div class="activity-icon">&#127860;</div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127807;</div>
               <div class="activity-content">
                 <div class="activity-header">
-                  <div class="activity-name">Dinner &mdash; Port Renfrew or Victoria</div>
-                  <span class="tbd-badge">TBD</span>
+                  <div class="activity-name">&#127807; Beacon Hill Park &mdash; Victoria</div>
                 </div>
-                <div class="activity-desc">Dine locally in Port Renfrew on the way back, or save it for Victoria. Whatever fits the group&rsquo;s energy.</div>
+                <div class="activity-desc">Victoria&rsquo;s signature 200+ acre waterfront park &mdash; gardens, ponds, peacocks roaming freely, and sweeping ocean views from Dallas Road. A gentle, beautiful way to wind down the afternoon after a big day at the coast.</div>
+                <a class="activity-link" href="https://www.victoria.ca/EN/main/residents/parks/beacon-hill.html" target="_blank" rel="noopener">&#128279; Beacon Hill Park Info</a>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127968;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Evening &mdash; Back to VRBO</div>
+                </div>
+                <div class="activity-desc">Relax at the VRBO after a full day. Spinnakers covers dinner &mdash; no need to go back out.</div>
               </div>
             </div>
           </div>
@@ -1165,7 +1261,7 @@
           <div class="day-number">04</div>
           <div class="day-info">
             <div class="day-date">Sunday, September 14, 2026</div>
-            <div class="day-title">Gardens Day</div>
+            <div class="day-title">Gardens Day + Fairmont Empress</div>
           </div>
           <div class="day-badges">
             <div class="day-start">&#9200; Start: 8:00 AM</div>
@@ -1203,7 +1299,7 @@
               <div class="activity-content">
                 <div class="activity-header">
                   <div class="activity-name">Victoria Butterfly Gardens</div>
-                  <span class="highlight-badge">Megan&rsquo;s Pick</span>
+                  <span class="megans-pick-badge">&#129419; Megan&rsquo;s Pick</span>
                 </div>
                 <div class="activity-desc">A tropical indoor conservatory in Brentwood Bay filled with free-flying exotic butterflies, lush hanging flowers, and vibrant tropical plants. A magical, immersive experience for all ages.</div>
                 <a class="activity-link" href="https://butterflygardens.com/" target="_blank" rel="noopener">&#128279; butterflygardens.com</a>
@@ -1229,6 +1325,7 @@
                 <div class="activity-header">
                   <div class="activity-name">Afternoon Tea &mdash; The Dining Room Restaurant</div>
                   <span class="highlight-badge">Book Now!</span>
+                  <span class="megans-pick-badge">&#129419; Megan&rsquo;s Highlight</span>
                 </div>
                 <div class="activity-desc">Megan&rsquo;s highlight &mdash; the legendary Butchart Gardens afternoon tea experience. Elegant, historic, and utterly delightful. This fills up months in advance.</div>
                 <div class="activity-tip">&#9888;&#65039; BOOK IN ADVANCE &mdash; this is a must-reserve experience!</div>
@@ -1245,16 +1342,28 @@
               </div>
             </div>
           </div>
-          <div class="time-label">Evening &mdash; Flexible</div>
+          <div class="time-label">Evening &mdash; Flexible Dinner</div>
           <div class="activities">
-            <div class="activity-card tbd">
-              <div class="activity-icon">&#127860;</div>
+            <div class="activity-card" style="border-left: 3px solid #8B5E3C;">
+              <div class="activity-icon">&#127963;</div>
               <div class="activity-content">
                 <div class="activity-header">
-                  <div class="activity-name">Dinner &mdash; Your Choice</div>
-                  <span class="tbd-badge">TBD</span>
+                  <div class="activity-name">&#127963; Fairmont Empress &mdash; Dinner Option</div>
+                  <span class="highlight-badge">Preferred Dinner</span>
                 </div>
-                <div class="activity-desc">Two great options: dine out somewhere in Victoria, or have a cozy <strong>&ldquo;dinner at home&rdquo;</strong> at the VRBO &mdash; cook in, open some wine, put your feet up. After a busy weekend, a chill VRBO night sounds pretty great.</div>
+                <div class="activity-desc">Victoria&rsquo;s most iconic landmark &mdash; the Fairmont Empress on the Inner Harbour. The <strong>Q Restaurant &amp; Bar</strong> or <strong>Q Bar</strong> is a landmark Victoria experience if the group has energy left after the gardens. Alternatively, the Empress is world-famous for its afternoon tea &mdash; if you&rsquo;d prefer the classic Empress tea experience instead of Butchart&rsquo;s tea, swap the afternoon plan.</div>
+                <div class="activity-tip">&#128204; Reservations recommended &mdash; tea especially fills up. The Empress tea is a world-famous experience in its own right.</div>
+                <a class="activity-link" href="https://www.fairmont.com/en/hotels/victoria/fairmont-empress/dining.html" target="_blank" rel="noopener">&#128279; Empress Dining</a>
+              </div>
+            </div>
+            <div class="activity-card tbd">
+              <div class="activity-icon">&#127968;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Fallback &mdash; Cook-In at the VRBO</div>
+                  <span class="tbd-badge">Alternative</span>
+                </div>
+                <div class="activity-desc">After a full gardens day, a relaxed cook-in night at the VRBO is a perfectly lovely option too. Open some wine, put your feet up.</div>
               </div>
             </div>
           </div>
@@ -1267,7 +1376,7 @@
           <div class="day-number">05</div>
           <div class="day-info">
             <div class="day-date">Monday, September 15, 2026</div>
-            <div class="day-title">Travel Day to North Vancouver + Capilano</div>
+            <div class="day-title">Travel Day to North Vancouver + Capilano + Ramen</div>
           </div>
           <div class="day-badges">
             <div class="day-start">&#9200; Start: 8:00 AM</div>
@@ -1279,6 +1388,11 @@
           <div class="day-photo-caption">Capilano Suspension Bridge &mdash; 137 metres above the Capilano River, North Vancouver</div>
         </div>
         <div class="day-body">
+          <!-- Poutine Watch banner for Vancouver days -->
+          <div class="poutine-watch">
+            <span class="poutine-watch-icon">&#127839;</span>
+            <span><strong>Poutine Watch</strong> &mdash; Keep an eye out for poutine spots for Megan throughout Vancouver!</span>
+          </div>
           <div class="time-label">Morning</div>
           <div class="activities">
             <div class="activity-card">
@@ -1328,6 +1442,19 @@
                 <a class="activity-link" href="https://www.capbridge.com/" target="_blank" rel="noopener">&#128279; capbridge.com</a>
               </div>
             </div>
+            <!-- Grouse Mountain - Optional -->
+            <div class="activity-card optional">
+              <div class="activity-icon">&#9968;&#65039;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">&#9968;&#65039; Grouse Mountain &mdash; Optional Hike</div>
+                  <span class="optional-badge">Optional &mdash; If Time Allows</span>
+                </div>
+                <div class="activity-desc">Located just ~5 minutes from Capilano Bridge &mdash; they&rsquo;re practically neighbors. The famous <strong>Grouse Grind</strong> is a 2.9 km, 2&ndash;3 hour vertical hike nicknamed &ldquo;Mother Nature&rsquo;s Stairmaster.&rdquo; If the group has energy and time after the ferry and Capilano visit, this is a spectacular add-on. The <strong>Skyride gondola</strong> is a less-strenuous alternative with equally great summit views.</div>
+                <div class="activity-tip">Skip this if the group is tired from the travel day &mdash; it&rsquo;ll still be a great day without it.</div>
+                <a class="activity-link" href="https://www.grousemountain.com/" target="_blank" rel="noopener">&#128279; grousemountain.com</a>
+              </div>
+            </div>
           </div>
           <div class="time-label">Late Afternoon / Evening</div>
           <div class="activities">
@@ -1347,6 +1474,7 @@
                 <div class="activity-header">
                   <div class="activity-name">Dinner &mdash; Ramen Danbo</div>
                   <span class="highlight-badge">Travel Day Treat</span>
+                  <span class="moms-pick-badge">&#127836; Nancy&rsquo;s / Mom&rsquo;s Pick</span>
                 </div>
                 <div class="activity-desc">Authentic Fukuoka-style tonkotsu ramen. Rich, deeply flavored pork bone broth, fully customizable. A satisfying and deeply restorative end to a long travel day.</div>
                 <a class="activity-link" href="https://ramendanbo.com/our-menu-vancouver/" target="_blank" rel="noopener">&#128279; ramendanbo.com</a>
@@ -1362,7 +1490,7 @@
           <div class="day-number">06</div>
           <div class="day-info">
             <div class="day-date">Tuesday, September 16, 2026</div>
-            <div class="day-title">Stanley Park + Teahouse + Granville Island</div>
+            <div class="day-title">Stanley Park E-bikes + Teahouse + Granville Island</div>
           </div>
           <div class="day-badges">
             <div class="day-start">&#9200; Start: 8:00 AM</div>
@@ -1370,6 +1498,11 @@
           </div>
         </div>
         <div class="day-body">
+          <!-- Poutine Watch banner -->
+          <div class="poutine-watch">
+            <span class="poutine-watch-icon">&#127839;</span>
+            <span><strong>Poutine Watch</strong> &mdash; Keep an eye out for poutine spots for Megan throughout Vancouver!</span>
+          </div>
           <div class="time-label">Morning</div>
           <div class="activities">
             <div class="activity-card tbd">
@@ -1398,8 +1531,18 @@
                   <div class="activity-name">Stanley Park &mdash; Vancouver</div>
                   <span class="highlight-badge">Highlight</span>
                 </div>
-                <div class="activity-desc">One of North America&rsquo;s greatest urban parks. Walk or cycle the 9 km seawall with stunning views of English Bay and the North Shore mountains. Visit the totem poles, explore old-growth forest, and soak in the autumn foliage.</div>
+                <div class="activity-desc">One of North America&rsquo;s greatest urban parks. The 9 km seawall is ideal for e-bikes &mdash; a relaxed, scenic lap with stunning views of English Bay and the North Shore mountains. Visit the totem poles, explore old-growth forest, and soak in the autumn foliage.</div>
                 <a class="activity-link" href="https://vancouver.ca/parks-recreation-culture/stanley-park.aspx" target="_blank" rel="noopener">&#128279; Stanley Park Info</a>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#128690;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">&#128690; E-bike Rental &mdash; Stanley Park Seawall</div>
+                </div>
+                <div class="activity-desc">The 9 km seawall loop is perfect on e-bikes &mdash; much less tiring than walking the whole circuit, and you can stop for photos anywhere. Rental shops near the park entrance (e.g., <strong>Spokes Bicycle Rentals</strong>, <strong>Cycle City Rentals</strong>). Budget 2&ndash;3 hours for a relaxed lap with stops.</div>
+                <div class="activity-tip">&#128204; Consider reserving e-bikes in advance for the morning slot &mdash; popular in September.</div>
               </div>
             </div>
           </div>
@@ -1418,15 +1561,25 @@
               </div>
             </div>
           </div>
-          <div class="time-label">Afternoon / Evening</div>
+          <div class="time-label">Afternoon &mdash; Granville Island</div>
           <div class="activities">
             <div class="activity-card">
-              <div class="activity-icon">&#128663;</div>
+              <div class="activity-icon">&#9973;&#65039;</div>
               <div class="activity-content">
                 <div class="activity-header">
-                  <div class="activity-name">Drive to Granville Island</div>
+                  <div class="activity-name">E-bike or Sea-Taxi to Granville Island</div>
                 </div>
-                <div class="activity-desc">About 15 minutes from Stanley Park.</div>
+                <div class="activity-desc">Two fun options from Stanley Park to Granville Island: (1) <strong>Continue on e-bikes</strong> along the Seaside Greenway (~30 min scenic ride across False Creek), or (2) <strong>Aquabus / False Creek Ferries</strong> &mdash; a charming 5-minute harbour ride. Both are scenic &mdash; group&rsquo;s choice based on energy.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127978;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">Granville Island Public Market</div>
+                </div>
+                <div class="activity-desc">One of North America&rsquo;s great public markets &mdash; fresh produce, local food artisans, crafts, and grab-and-go stalls with waterfront seating. Great for a browse and a casual lunch bite before or after the brewery.</div>
+                <a class="activity-link" href="https://granvilleisland.com/public-market" target="_blank" rel="noopener">&#128279; granvilleisland.com/public-market</a>
               </div>
             </div>
             <div class="activity-card">
@@ -1435,8 +1588,9 @@
                 <div class="activity-header">
                   <div class="activity-name">Granville Island Brewing</div>
                   <span class="highlight-badge">Flexible Meal</span>
+                  <span class="kirks-pick-badge">&#127866; Kirk&rsquo;s / Dad&rsquo;s Pick</span>
                 </div>
-                <div class="activity-desc">Canada&rsquo;s original craft brewery (est. 1984). Lunch OR dinner at the taproom &mdash; use flexibly depending on how the Teahouse pacing goes. While you&rsquo;re on Granville Island, the famous Public Market and artisan shops are right there to explore.</div>
+                <div class="activity-desc">Canada&rsquo;s original craft brewery (est. 1984). Lunch OR dinner at the taproom &mdash; use flexibly depending on how the Teahouse pacing goes. Right next to the Public Market &mdash; pair them naturally.</div>
                 <a class="activity-link" href="https://www.granvilleislandbrewing.ca/en-CA" target="_blank" rel="noopener">&#128279; granvilleislandbrewing.ca</a>
               </div>
             </div>
@@ -1459,7 +1613,7 @@
           <div class="day-number">07</div>
           <div class="day-info">
             <div class="day-date">Wednesday, September 17, 2026</div>
-            <div class="day-title">Vancouver Cafe + Steamworks + Night Market</div>
+            <div class="day-title">Kitsilano Beach + The Naam + Night Market</div>
           </div>
           <div class="day-badges">
             <div class="day-start">&#9200; Start: 8:00 AM</div>
@@ -1471,20 +1625,48 @@
           <div class="day-photo-caption">Richmond Night Market &mdash; one of North America&rsquo;s largest night markets, Richmond, BC</div>
         </div>
         <div class="day-body">
-          <div class="time-label">Morning &mdash; Slow Start</div>
+          <!-- Poutine Watch banner -->
+          <div class="poutine-watch">
+            <span class="poutine-watch-icon">&#127839;</span>
+            <span><strong>Poutine Watch</strong> &mdash; Keep an eye out for poutine spots for Megan throughout Vancouver! The Night Market almost certainly has poutine vendors.</span>
+          </div>
+          <div class="time-label">Morning</div>
           <div class="activities">
             <div class="activity-card tbd">
               <div class="activity-icon">&#9749;</div>
               <div class="activity-content">
                 <div class="activity-header">
-                  <div class="activity-name">8:00 AM &mdash; Morning Cafe</div>
+                  <div class="activity-name">8:00 AM &mdash; Morning Coffee</div>
                   <span class="tbd-badge">TBD</span>
                 </div>
-                <div class="activity-desc">A deliberately slow morning &mdash; find a cafe near the VRBO or head into Vancouver for a scenic morning. Busy evening ahead, so lean into the calm.</div>
+                <div class="activity-desc">A deliberately slow morning &mdash; busy evening ahead with the Night Market, so lean into the calm.</div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-icon">&#127958;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">&#127958; Kitsilano Beach &mdash; Morning Walk</div>
+                </div>
+                <div class="activity-desc">Famous Vancouver beach with the iconic Kits Pool (outdoor saltwater pool), beach volleyball courts, and sweeping views of downtown Vancouver and the North Shore mountains. A perfect West Coast morning &mdash; coffee walk along the beach, soak up the energy.</div>
               </div>
             </div>
           </div>
-          <div class="time-label">Midday &mdash; Explore Vancouver</div>
+          <div class="time-label">Brunch / Lunch</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#127807;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">The Naam &mdash; Kitsilano</div>
+                  <span class="highlight-badge">Vancouver Institution</span>
+                </div>
+                <div class="activity-desc">Vancouver institution since 1968 &mdash; vegetarian with Thai influence, open 24 hours. Right in the Kitsilano neighborhood, just steps from the beach. A casual, leisurely brunch or lunch to contrast with the Night Market&rsquo;s food-stall chaos later in the evening.</div>
+                <a class="activity-link" href="https://thenaam.com/" target="_blank" rel="noopener">&#128279; thenaam.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Afternoon &mdash; Vancouver Wander</div>
           <div class="activities">
             <div class="activity-card">
               <div class="activity-icon">&#127959;&#65039;</div>
@@ -1492,21 +1674,7 @@
                 <div class="activity-header">
                   <div class="activity-name">Vancouver at Leisure</div>
                 </div>
-                <div class="activity-desc">Suggestions: <strong>Gastown</strong> (historic cobblestone streets, the steam clock, indie shops), <strong>Downtown / Waterfront</strong> (Canada Place, the harbour, views of the mountains). Just wander and enjoy.</div>
-              </div>
-            </div>
-          </div>
-          <div class="time-label">Afternoon / Early Evening</div>
-          <div class="activities">
-            <div class="activity-card" style="border-left: 3px solid #F0A500;">
-              <div class="activity-icon">&#127829;</div>
-              <div class="activity-content">
-                <div class="activity-header">
-                  <div class="activity-name">Steamworks Brew Pub &mdash; Gastown</div>
-                  <span class="highlight-badge">Megan&rsquo;s Poutine!</span>
-                </div>
-                <div class="activity-desc">A landmark craft brewpub in Gastown&rsquo;s historic cobblestone district. Megan&rsquo;s must-have: <strong>POUTINE</strong>. Craft beers on tap, great food, and a perfect excuse to explore Gastown&rsquo;s heritage architecture.</div>
-                <a class="activity-link" href="https://steamworks.com/brew-pub/" target="_blank" rel="noopener">&#128279; steamworks.com</a>
+                <div class="activity-desc">Suggestions: <strong>Gastown</strong> (historic cobblestone streets, the steam clock, indie shops), <strong>Downtown / Waterfront</strong> (Canada Place, the harbour, views of the mountains). Just wander and enjoy &mdash; <strong>Poutine Watch active</strong> for any afternoon stops.</div>
               </div>
             </div>
           </div>
@@ -1534,7 +1702,7 @@
           <div class="day-number">08</div>
           <div class="day-info">
             <div class="day-date">Thursday, September 18, 2026</div>
-            <div class="day-title">Farewell Day &mdash; I-5 South to SeaTac</div>
+            <div class="day-title">Tim Hortons + Chinatown BBQ + I-5 Home</div>
           </div>
           <div class="day-badges">
             <div class="day-start">&#9200; Start: 8:00 AM</div>
@@ -1542,6 +1710,11 @@
           </div>
         </div>
         <div class="day-body">
+          <!-- Poutine Watch banner - last chance! -->
+          <div class="poutine-watch">
+            <span class="poutine-watch-icon">&#127839;</span>
+            <span><strong>Poutine Watch</strong> &mdash; Last chance for Megan! Keep an eye out on the way out of Vancouver.</span>
+          </div>
           <div class="time-label">Morning</div>
           <div class="activities">
             <div class="activity-card">
@@ -1554,14 +1727,26 @@
               </div>
             </div>
             <div class="activity-card">
-              <div class="activity-icon">&#127807;</div>
+              <div class="activity-icon">&#9749;</div>
               <div class="activity-content">
                 <div class="activity-header">
-                  <div class="activity-name">Coffee or Breakfast &mdash; The Naam (optional)</div>
-                  <span class="tbd-badge">TBD</span>
+                  <div class="activity-name">&#9749; Tim Hortons &mdash; Classic Canadian Send-Off</div>
                 </div>
-                <div class="activity-desc">Grab coffee somewhere convenient, OR stop at <strong>The Naam</strong> in Kitsilano for breakfast on the way out. A Vancouver institution since 1968 &mdash; vegetarian with Thai influence, open 24 hours. A great morning bite before crossing the border.</div>
-                <a class="activity-link" href="https://thenaam.com/" target="_blank" rel="noopener">&#128279; thenaam.com</a>
+                <div class="activity-desc">Quintessential Canadian morning stop on the way out. <strong>Timbits</strong> (the famous donut holes) + coffee &mdash; the perfect farewell to Canada. Tim Hortons locations are all along the route south, so it&rsquo;s easy to hit one before the border crossing.</div>
+              </div>
+            </div>
+          </div>
+          <div class="time-label">Late Morning &mdash; Farewell Lunch</div>
+          <div class="activities">
+            <div class="activity-card">
+              <div class="activity-icon">&#127836;</div>
+              <div class="activity-content">
+                <div class="activity-header">
+                  <div class="activity-name">&#127836; Chinatown BBQ &mdash; Family-Style Send-Off</div>
+                  <span class="highlight-badge">Farewell Lunch</span>
+                </div>
+                <div class="activity-desc">Family-style Cantonese roasted meats &mdash; duck, pork belly, char siu. A communal, delicious send-off in Vancouver&rsquo;s historic Chinatown before leaving the city entirely. Perfect for a party of four.</div>
+                <a class="activity-link" href="https://chinatownbbq.com/new-menu/" target="_blank" rel="noopener">&#128279; chinatownbbq.com</a>
               </div>
             </div>
           </div>
@@ -1616,17 +1801,11 @@
           <span class="bonus-icon">&#10024;</span>
           <div>
             <div class="bonus-title">Bonus / Optional Stops</div>
-            <div class="bonus-subtitle">If time allows &mdash; not formally scheduled</div>
+            <div class="bonus-subtitle">Every stop is now accounted for in the itinerary!</div>
           </div>
         </div>
-        <div class="bonus-stop">
-          <div class="bonus-stop-icon">&#127836;</div>
-          <div class="bonus-stop-content">
-            <div class="bonus-stop-name">Chinatown BBQ &mdash; Vancouver Chinatown</div>
-            <div class="bonus-stop-desc">Family-style Cantonese roasted meats &mdash; duck, pork belly, char siu. A communal, delicious experience in Vancouver&rsquo;s historic Chinatown. Perfect for a party of four.</div>
-            <div class="bonus-stop-note">Not formally scheduled &mdash; could substitute for any Vancouver meal, or drop in on Day 6 or 7 if the group has extra time or appetite.</div>
-            <a class="activity-link" href="https://chinatownbbq.com/new-menu/" target="_blank" rel="noopener">&#128279; chinatownbbq.com</a>
-          </div>
+        <div class="bonus-empty">
+          Nothing here &mdash; every stop is accounted for! Grouse Mountain is a soft-optional on Day 5 (see that day&rsquo;s card). All other stops have been allocated to specific days.
         </div>
       </div>
     </div>
@@ -1666,6 +1845,16 @@
           <div class="quicklink-name">Botanical Beach</div>
           <div class="quicklink-sub">Port Renfrew, BC</div>
         </a>
+        <a class="quicklink-card" href="https://www.spinnakers.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127866;</span>
+          <div class="quicklink-name">Spinnakers Brewpub</div>
+          <div class="quicklink-sub">Victoria, BC &mdash; Day 3</div>
+        </a>
+        <a class="quicklink-card" href="https://www.victoria.ca/EN/main/residents/parks/beacon-hill.html" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127807;</span>
+          <div class="quicklink-name">Beacon Hill Park</div>
+          <div class="quicklink-sub">Victoria, BC &mdash; Day 3</div>
+        </a>
         <a class="quicklink-card" href="https://butterflygardens.com/" target="_blank" rel="noopener">
           <span class="quicklink-icon">&#129419;</span>
           <div class="quicklink-name">Butterfly Gardens</div>
@@ -1676,10 +1865,20 @@
           <div class="quicklink-name">Butchart Gardens</div>
           <div class="quicklink-sub">Brentwood Bay, BC</div>
         </a>
+        <a class="quicklink-card" href="https://www.fairmont.com/en/hotels/victoria/fairmont-empress/dining.html" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127963;</span>
+          <div class="quicklink-name">Fairmont Empress</div>
+          <div class="quicklink-sub">Victoria, BC &mdash; Day 4</div>
+        </a>
         <a class="quicklink-card" href="https://www.capbridge.com/" target="_blank" rel="noopener">
           <span class="quicklink-icon">&#127795;</span>
           <div class="quicklink-name">Capilano Bridge</div>
           <div class="quicklink-sub">North Vancouver, BC &mdash; Day 5</div>
+        </a>
+        <a class="quicklink-card" href="https://www.grousemountain.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#9968;&#65039;</span>
+          <div class="quicklink-name">Grouse Mountain</div>
+          <div class="quicklink-sub">Day 5 &mdash; Optional</div>
         </a>
         <a class="quicklink-card" href="https://ramendanbo.com/our-menu-vancouver/" target="_blank" rel="noopener">
           <span class="quicklink-icon">&#127836;</span>
@@ -1696,30 +1895,35 @@
           <div class="quicklink-name">The Teahouse</div>
           <div class="quicklink-sub">Stanley Park, Vancouver</div>
         </a>
-        <a class="quicklink-card" href="https://www.granvilleislandbrewing.ca/en-CA" target="_blank" rel="noopener">
-          <span class="quicklink-icon">&#127866;</span>
-          <div class="quicklink-name">Granville Island</div>
+        <a class="quicklink-card" href="https://granvilleisland.com/public-market" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127978;</span>
+          <div class="quicklink-name">Granville Island Market</div>
           <div class="quicklink-sub">Vancouver, BC &mdash; Day 6</div>
         </a>
-        <a class="quicklink-card" href="https://steamworks.com/brew-pub/" target="_blank" rel="noopener">
-          <span class="quicklink-icon">&#127829;</span>
-          <div class="quicklink-name">Steamworks Brew Pub</div>
-          <div class="quicklink-sub">Gastown, Vancouver</div>
+        <a class="quicklink-card" href="https://www.granvilleislandbrewing.ca/en-CA" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127866;</span>
+          <div class="quicklink-name">Granville Island Brewing</div>
+          <div class="quicklink-sub">Vancouver, BC &mdash; Day 6</div>
+        </a>
+        <a class="quicklink-card" href="https://thenaam.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#127807;</span>
+          <div class="quicklink-name">The Naam</div>
+          <div class="quicklink-sub">Kitsilano &mdash; Day 7</div>
         </a>
         <a class="quicklink-card" href="https://www.richmondnightmarket.com/" target="_blank" rel="noopener">
           <span class="quicklink-icon">&#127749;</span>
           <div class="quicklink-name">Richmond Night Market</div>
           <div class="quicklink-sub">Richmond, BC</div>
         </a>
-        <a class="quicklink-card" href="https://thenaam.com/" target="_blank" rel="noopener">
-          <span class="quicklink-icon">&#127807;</span>
-          <div class="quicklink-name">The Naam</div>
-          <div class="quicklink-sub">Kitsilano &mdash; Day 8</div>
-        </a>
         <a class="quicklink-card" href="https://chinatownbbq.com/new-menu/" target="_blank" rel="noopener">
           <span class="quicklink-icon">&#127836;</span>
           <div class="quicklink-name">Chinatown BBQ</div>
-          <div class="quicklink-sub">Optional / Bonus</div>
+          <div class="quicklink-sub">Vancouver &mdash; Day 8</div>
+        </a>
+        <a class="quicklink-card" href="https://www.timhortons.com/" target="_blank" rel="noopener">
+          <span class="quicklink-icon">&#9749;</span>
+          <div class="quicklink-name">Tim Hortons</div>
+          <div class="quicklink-sub">Day 8 &mdash; Canadian Send-Off</div>
         </a>
       </div>
     </div>

@@ -13,11 +13,14 @@ Don't wait on these - some fill up fast, especially in September!
 
 | What | Why It Matters | Status |
 |---|---|---|
-| **Butchart Gardens Afternoon Tea** | Megan's highlight - the Dining Room Restaurant books up. Reserve early! | Book ASAP |
-| **Capilano Suspension Bridge** | Online tickets save time and money at the gate (Day 5) | Book before trip |
+| **Butchart Gardens Afternoon Tea** | Megan's highlight - the Dining Room Restaurant books up. Reserve early! (Day 4, Sept 14) | Book ASAP |
+| **Fairmont Empress Dinner / Tea** | Reservations recommended - tea especially fills up (Day 4, Sept 14) | Book before trip |
+| **Capilano Suspension Bridge** | Online tickets save time and money at the gate (Day 5, Sept 15) | Book before trip |
 | **BC Ferries (Swartz Bay → Tsawwassen)** | Sept 15 crossing - reservations strongly recommended | [PLACEHOLDER - Book at bcferries.com] |
 | **Black Ball Ferry (Port Angeles → Victoria)** | Sept 12 crossing - book your sailing time in advance | [PLACEHOLDER - Book at cohoferry.com] |
-| **The Teahouse Restaurant** | Brunch or wine hour inside Stanley Park - reservations recommended (Day 6) | Book before trip |
+| **The Teahouse Restaurant** | Brunch or wine hour inside Stanley Park - reservations recommended (Day 6, Sept 16) | Book before trip |
+| **Spinnakers Gastro Brewpub** | Reservation for lunch/dinner (Day 3, Sept 13) | Book before trip |
+| **E-bike Rentals** | Consider reserving morning slot for Stanley Park (Day 6, Sept 16) | Book before trip |
 | **Stonehouse Restaurant & Pub** | Sidney, BC - Day 2 evening arrival dinner. Call ahead if possible | Call to reserve |
 
 ---
@@ -97,9 +100,9 @@ A charming seaside pub in the little town of Sidney, right on the Saanich Penins
 
 > **Start Time: 8:00 AM**
 
-**Botanical Beach - Tide Pool Morning**
+**Botanical Beach + Spinnakers + Beacon Hill Park**
 
-Today we're driving out to Port Renfrew to visit Botanical Beach Provincial Park - one of the most spectacular tidal pool destinations in all of North America. We're budgeting about 3 hours at the pools rather than a full day, which leaves us a relaxed afternoon and evening back in Victoria.
+Today we're driving out to Port Renfrew to visit Botanical Beach Provincial Park - one of the most spectacular tidal pool destinations in all of North America. We're budgeting about 3 hours at the pools, then returning to Victoria for lunch/early dinner at Spinnakers and a late-afternoon stroll through Beacon Hill Park.
 
 ### Morning - Head West
 
@@ -121,14 +124,31 @@ World-class tidal pools carved into ancient sandstone shelves along the dramatic
 - Bring layers - it can be windy and cool even on a warm day
 - No dogs allowed in the tidal pool area
 
-### Afternoon - Back to Victoria
+### Afternoon - Return to Victoria (~1:30-2:00 PM)
 
 - **~1:00 PM** - Depart Port Renfrew, return to Victoria (~1.5 hrs)
-- **Afternoon/early evening** - Relax, explore Victoria, maybe the Inner Harbour or a stroll through downtown
+
+### Afternoon - [Spinnakers Gastro Brewpub & Guesthouses](https://www.spinnakers.com/)
+
+Victoria, BC
+
+🍺 **Kirk's / Dad's Pick** — Canada's oldest brewpub (est. 1984), right on Victoria's waterfront. Brewed-on-site beers, locally-sourced food, and an oceanfront setting that's hard to beat. Perfect for a late lunch or early dinner after returning from Port Renfrew around 1:30-2:00 PM.
+
+> **Note:** Reservation recommended for lunch/dinner.
+
+### Late Afternoon - Beacon Hill Park
+
+Victoria, BC
+
+🌿 Victoria's signature 200+ acre waterfront park — gardens, ponds, peacocks roaming freely, and sweeping ocean views from Dallas Road. A gentle, beautiful way to wind down the afternoon after a big day at the coast.
+
+- [Beacon Hill Park Info](https://www.victoria.ca/EN/main/residents/parks/beacon-hill.html)
 
 ### Evening
 
-- **Dinner** - [TBD - Port Renfrew on the way back OR back in Victoria, whatever fits the group's energy]
+- Back to VRBO — Spinnakers covers dinner, no need to go back out.
+
+**Day 3 flow:** 8 AM coffee → drive to Port Renfrew → Botanical Beach (~3 hrs, 10 AM-1 PM) → return to Victoria → **Spinnakers lunch/early dinner** (Kirk's pick) → **Beacon Hill Park stroll** → back to VRBO.
 
 ---
 
@@ -136,9 +156,9 @@ World-class tidal pools carved into ancient sandstone shelves along the dramatic
 
 > **Start Time: 8:00 AM**
 
-**Butterfly Gardens + Butchart Gardens - Megan's Day**
+**Butterfly Gardens + Butchart Gardens + Fairmont Empress**
 
-This is Megan's day, and it is going to be beautiful. We're spending it on the Saanich Peninsula, about 30 minutes north of Victoria, visiting two incredible attractions that happen to be just 2 km apart. Perfect planning.
+This is Megan's day, and it is going to be beautiful. We're spending it on the Saanich Peninsula, about 30 minutes north of Victoria, visiting two incredible attractions that happen to be just 2 km apart. Evening options include the iconic Fairmont Empress.
 
 ### Morning
 
@@ -149,7 +169,7 @@ This is Megan's day, and it is going to be beautiful. We're spending it on the S
 
 Brentwood Bay, BC
 
-Megan's pick - a lush indoor tropical conservatory where hundreds of exotic butterflies fly freely around you. Exotic birds, tropical plants, and a genuinely magical atmosphere.
+🦋 **Megan's Pick** — a lush indoor tropical conservatory where hundreds of exotic butterflies fly freely around you. Exotic birds, tropical plants, and a genuinely magical atmosphere.
 
 ### Afternoon - [The Butchart Gardens](https://butchartgardens.com/)
 
@@ -162,11 +182,15 @@ This is the one to book in advance. The afternoon tea at Butchart Gardens is a c
 
 > **Pacing note:** Budget **2-3 hours total** between the two gardens. Enjoy it, but don't try to see every last corner - this is meant to be a lovely, relaxed day.
 
-### Evening - Flexible
+### Evening - Flexible Dinner Options
 
-- **Dinner - your choice!** [TBD]
-  - Option A: Go out somewhere in Victoria for a nice dinner
-  - Option B: **"Dinner at home"** at the VRBO - cook in, open some wine, put your feet up. After a busy weekend, a chill VRBO night sounds pretty great.
+**Preferred: [Fairmont Empress](https://www.fairmont.com/en/hotels/victoria/fairmont-empress/dining.html) — Q Restaurant & Bar or Q Bar**
+
+Victoria's most iconic landmark on the Inner Harbour. The Q Restaurant & Bar is a landmark Victoria experience if the group has energy left after the gardens. Reservations recommended.
+
+> **Scheduling note:** Megan's tea at Butchart's Dining Room is the planned tea experience. The Empress could be an **alternative** OR a dinner option instead. If you want the classic Empress tea experience instead of Butchart's tea, swap the afternoon plan. The Empress tea is world-famous in its own right.
+
+**Fallback: Cook-in at the VRBO** — After a full gardens day, a relaxed cook-in night is a perfectly lovely option too. Open some wine, put your feet up.
 
 ---
 
@@ -174,7 +198,9 @@ This is the one to book in advance. The afternoon tea at Butchart Gardens is a c
 
 > **Start Time: 8:00 AM**
 
-**Travel Day - Victoria to North Vancouver + Capilano Suspension Bridge + Ramen Danbo**
+**Travel Day - Victoria to North Vancouver + Capilano + Optional Grouse Mountain + Ramen Danbo**
+
+> 🍟 **Poutine Watch** — Keep an eye out for poutine spots for Megan throughout Vancouver!
 
 Time to say goodbye to Victoria and head to the big city! Today we take the BC Ferries crossing from Swartz Bay to Tsawwassen, hit Capilano Suspension Bridge on the way in, and cap the long travel day with ramen.
 
@@ -209,6 +235,14 @@ One of the most iconic experiences in all of British Columbia. The Capilano Susp
 
 **Buy tickets online in advance** - it saves time and money at the gate.
 
+### Optional Add-On - [Grouse Mountain](https://www.grousemountain.com/)
+
+North Vancouver, BC (~5 min from Capilano Bridge)
+
+⛰️ **Optional — If Time Allows** — Located just ~5 minutes from Capilano Bridge. The famous **Grouse Grind** is a 2.9 km, 2-3 hour vertical hike nicknamed "Mother Nature's Stairmaster." If the group has energy and time after the ferry and Capilano visit, this is a spectacular add-on. The **Skyride gondola** is a less-strenuous alternative with equally great summit views.
+
+> Skip this if the group is tired from the travel day — it'll still be a great day without it.
+
 ### Late Afternoon - Check In to North Vancouver VRBO
 
 - [PLACEHOLDER - VRBO link and address TBD]
@@ -217,7 +251,9 @@ One of the most iconic experiences in all of British Columbia. The Capilano Susp
 
 Vancouver
 
-Authentic Fukuoka-style tonkotsu ramen. Rich, deeply flavored pork bone broth, fully customizable. A satisfying and deeply restorative end to a long travel day.
+🍜 **Nancy's / Mom's Pick** — Authentic Fukuoka-style tonkotsu ramen. Rich, deeply flavored pork bone broth, fully customizable. A satisfying and deeply restorative end to a long travel day.
+
+**Day 5 flow:** 8 AM check-out → ferry crossing → arrive ~1-2 PM → Capilano (1-2 hrs) → **OPTIONAL: Grouse Mountain if time allows** → check into North Van VRBO → Ramen Danbo dinner (Mom's pick).
 
 ---
 
@@ -225,20 +261,26 @@ Authentic Fukuoka-style tonkotsu ramen. Rich, deeply flavored pork bone broth, f
 
 > **Start Time: 8:00 AM**
 
-**Stanley Park + The Teahouse + Granville Island**
+**Stanley Park E-bikes + The Teahouse + Granville Island**
 
-Our first full Vancouver day, and we're going to make the most of it. Stanley Park in the morning, The Teahouse for lunch or wine hour, then over to Granville Island for craft beer and the Public Market.
+> 🍟 **Poutine Watch** — Keep an eye out for poutine spots for Megan throughout Vancouver!
+
+Our first full Vancouver day, and we're going to make the most of it. Stanley Park e-bikes in the morning, The Teahouse for brunch/wine hour, then over to Granville Island for the Public Market and craft beer.
 
 ### Morning
 
 - **8:00 AM** - Coffee [TBD]
 - **~9:00 AM** - Drive across the Lions Gate Bridge to Stanley Park (~20 min)
 
-### Morning/Midday - [Stanley Park](https://vancouver.ca/parks-recreation-culture/stanley-park.aspx)
+### Morning - [Stanley Park](https://vancouver.ca/parks-recreation-culture/stanley-park.aspx) + E-bike Rental
 
 Vancouver, BC
 
-One of the greatest urban parks in the world. Stanley Park is a 405-hectare peninsula of old-growth forest right on the edge of downtown Vancouver. Stroll the famous seawall with views of the mountains and city skyline, visit the totem poles, and just soak it all in.
+One of the greatest urban parks in the world. Stanley Park is a 405-hectare peninsula of old-growth forest right on the edge of downtown Vancouver.
+
+**E-bikes around the Stanley Park Seawall** — The 9 km seawall is ideal for e-bikes (much less tiring than walking the whole loop). Rental shops near the park entrance (e.g., Spokes Bicycle Rentals, Cycle City Rentals). Budget 2-3 hours for a relaxed lap with photo stops.
+
+> Consider reserving e-bikes in advance for the morning slot — popular in September.
 
 ### Lunch/Brunch or Wine Hour - [The Teahouse Restaurant](https://www.vancouverdine.com/teahouse/)
 
@@ -246,45 +288,62 @@ Inside Stanley Park, Vancouver
 
 A historic converted military building tucked inside Stanley Park with stunning views of English Bay and the North Shore mountains. Dinner here gets pricey - **brunch or the wine hour is the move**. Great food, incredible setting, and a perfect mid-day break from the park. **Reservations recommended.**
 
-### Afternoon - Drive to Granville Island (~15 min)
+### Afternoon - E-bike or Sea-Taxi to Granville Island
+
+From Stanley Park, reach Granville Island via either:
+1. **Continue on e-bikes** along the Seaside Greenway (~30 min scenic ride across False Creek)
+2. **Aquabus or False Creek Ferries** (small "sea taxis") — a charming 5 min harbour ride
+
+Both options are fun and scenic — group can choose based on energy.
+
+### Afternoon - [Granville Island Public Market](https://granvilleisland.com/public-market)
+
+Granville Island, Vancouver
+
+One of North America's great public markets — fresh produce, local food artisans, crafts, and grab-and-go stalls with waterfront seating. Great for a browse and a casual lunch bite. Right next to Granville Island Brewing — pair them naturally.
 
 ### Afternoon/Evening - [Granville Island Brewing](https://www.granvilleislandbrewing.ca/en-CA)
 
 Granville Island, Vancouver
 
-Canada's original craft brewery (established 1984). Lunch OR dinner at the taproom - use this flexibly depending on how the Teahouse pacing goes. Waterfront views, great atmosphere, and while you're on Granville Island, the famous Public Market and artisan shops are right there to explore.
+🍺 **Kirk's / Dad's Pick** — Canada's original craft brewery (established 1984). Lunch OR dinner at the taproom - use this flexibly depending on how the Teahouse pacing goes.
 
 ### Evening
 
 - Return to North Vancouver VRBO, wind down after a big Vancouver day
 
+**Day 6 flow:** 8 AM coffee → Stanley Park e-bike rental → ride the seawall → The Teahouse brunch/wine hour (inside Stanley Park) → e-bike or sea-taxi to Granville Island → Granville Public Market browse + lunch → Granville Island Brewing (Dad's pick) → back to North Van.
+
 ---
 
-## Day 7 - Wednesday, September 17 🍜
+## Day 7 - Wednesday, September 17 🏖️
 
 > **Start Time: 8:00 AM**
 
-**Vancouver Cafe Day + Steamworks Poutine + Richmond Night Market**
+**Kitsilano Beach + The Naam + Richmond Night Market**
 
-Our last full day together! A nice slow morning, a poutine pilgrimage in Gastown, and then the big finale - the Richmond Night Market.
+> 🍟 **Poutine Watch** — Keep an eye out for poutine spots for Megan throughout Vancouver! The Night Market almost certainly has poutine vendors.
 
-### Morning - Slow Start
+Our last full day together! A nice slow morning at Kitsilano Beach, brunch at The Naam, and then the big finale — the Richmond Night Market.
 
-- **8:00 AM** - Morning coffee/cafe stop [TBD - find a cafe near the VRBO or head into Vancouver for a scenic morning]
-  - This is a deliberately slow morning - we've got a busy evening ahead with the night market, so lean into it.
+### Morning - Kitsilano Beach
 
-### Midday - Vancouver at Leisure
+- **8:00 AM** - Morning coffee/cafe stop [TBD]
+
+**[Kitsilano Beach](https://vancouver.ca/parks-recreation-culture/kitsilano-beach.aspx)** — Famous Vancouver beach with the iconic Kits Pool (outdoor saltwater pool), beach volleyball courts, and sweeping views of downtown Vancouver and the North Shore mountains. A perfect West Coast morning — coffee walk along the beach, soak up the energy. Right next to The Naam (Kitsilano neighborhood).
+
+### Brunch/Lunch - [The Naam](https://thenaam.com/)
+
+Kitsilano, Vancouver
+
+Vancouver institution since 1968 — vegetarian with Thai influence, open 24 hours. Right in the Kitsilano neighborhood, just steps from the beach. A casual, leisurely brunch or lunch to contrast with the Night Market's food-stall chaos later in the evening.
+
+### Afternoon - Vancouver at Leisure
 
 Explore Vancouver at whatever pace feels right. Suggestions:
 - **Gastown** - historic cobblestone streets, the steam clock, indie shops
 - **Downtown / Waterfront** - Canada Place, the harbor, views of the mountains
-- Just wander and enjoy
-
-### Afternoon/Early Evening - [Steamworks Brew Pub](https://steamworks.com/brew-pub/)
-
-Gastown, Vancouver
-
-**Megan's must-have: POUTINE.** A landmark craft brewpub in Gastown's historic cobblestone district. Craft beers on tap, great food, and a great excuse to explore Gastown's heritage architecture. ~25-30 min from North Vancouver.
+- Just wander and enjoy — **Poutine Watch active** for any afternoon stops
 
 ### Evening - [Richmond Night Market](https://www.richmondnightmarket.com/)
 
@@ -296,21 +355,30 @@ One of the largest night markets in North America. Hundreds of food vendors, gam
 
 > **Important:** The Richmond Night Market runs **Friday through Sunday evenings, May through October**. September 17 is a **Wednesday** - confirm current schedule on their website. If Wednesday is not available, we may need to shift this to an available Fri/Sat. Check [richmondnightmarket.com](https://www.richmondnightmarket.com/) for the current season schedule.
 
+**Day 7 flow:** 8 AM coffee → **Kitsilano Beach morning walk** → **The Naam brunch/lunch (Kitsilano)** → afternoon Vancouver wander (casual, **poutine watch** active) → evening **Richmond Night Market** (3-4 hrs).
+
 ---
 
 ## Day 8 - Thursday, September 18 👋
 
 > **Start Time: 8:00 AM**
 
-**Departure Day - I-5 South to SeaTac**
+**Tim Hortons + Chinatown BBQ + I-5 South to SeaTac**
+
+> 🍟 **Poutine Watch** — Last chance for Megan! Keep an eye out on the way out of Vancouver.
 
 All good things must come to an end. Today everyone drives I-5 south together - Mom and Dad fly out of **SeaTac**, and Brandon and Megan continue home to Kent (which is right next door to SeaTac).
 
 ### Morning
 
 - **8:00 AM** - Check out of North Vancouver VRBO
-- **Morning** - Coffee/cafe stop [TBD] OR breakfast at **[The Naam](https://thenaam.com/)** in Kitsilano on the way out
-  - The Naam is a Vancouver institution since 1968 - vegetarian with Thai influence, open 24 hours. A great morning bite before crossing the border.
+- **Morning** - ☕ **Tim Hortons run** — Quintessential Canadian send-off. **Timbits** (the famous donut holes) + coffee. Tim Hortons locations are all along the route south — easy to hit one before the border crossing. Classic Canadian farewell!
+
+### Late Morning - [Chinatown BBQ](https://chinatownbbq.com/new-menu/)
+
+Vancouver Chinatown
+
+Family-style Cantonese roasted meats — duck, pork belly, char siu. A communal, delicious send-off in Vancouver's historic Chinatown before leaving the city entirely. Perfect for a party of four.
 
 ### Midday - Drive I-5 South to SeaTac
 
@@ -327,17 +395,15 @@ About 3-4 hours including the border crossing (Peace Arch or Pacific Highway). A
 
 Safe travels, everyone. What a trip!
 
+**Day 8 flow:** 8 AM check out → **Tim Hortons + Timbits morning run** → **Chinatown BBQ lunch (family-style send-off)** → drive I-5 south → border crossing → drop parents at SeaTac → Brandon & Megan home to Kent.
+
 ---
 
 ## Bonus / Optional Stops (If Time Allows)
 
-Things we couldn't squeeze into a formal slot but would love to hit if an opening appears:
+Every stop is now accounted for in the itinerary! Grouse Mountain is a soft-optional on Day 5 (see that day's section). All other stops have been allocated to specific days.
 
-### [Chinatown BBQ](https://chinatownbbq.com/new-menu/)
-
-Vancouver Chinatown
-
-Family-style Cantonese roasted meats - duck, pork belly, char siu. A communal, delicious experience in Vancouver's historic Chinatown. Not formally scheduled, but this could easily substitute for any Vancouver meal (swap out a Day 6 lunch, or pop in on Day 7 in the afternoon) if the group has extra time or appetite. Perfect for a party of four.
+> Nothing here — every stop is accounted for!
 
 ---
 
@@ -351,17 +417,23 @@ Family-style Cantonese roasted meats - duck, pork belly, char siu. A communal, d
 | **BC Ferries** | [bcferries.com](https://www.bcferries.com) | Swartz Bay → Tsawwassen, Sept 15 |
 | **Stonehouse Restaurant & Pub** | [Yelp listing](https://www.yelp.com/biz/stonehouse-restaurant-and-pub-sidney?osq=food) | Sept 12 dinner, Sidney BC |
 | **Botanical Beach Provincial Park** | [vancouverislandbucketlist.com](https://vancouverislandbucketlist.com/experiences/botanical-beach/) | Sept 13 - check tide tables! (~3 hrs) |
-| **Victoria Butterfly Gardens** | [butterflygardens.com](https://butterflygardens.com/) | Sept 14 morning |
+| **Spinnakers Gastro Brewpub** | [spinnakers.com](https://www.spinnakers.com/) | Sept 13 lunch/dinner — Kirk's pick |
+| **Beacon Hill Park** | [victoria.ca/beacon-hill](https://www.victoria.ca/EN/main/residents/parks/beacon-hill.html) | Sept 13 late afternoon |
+| **Victoria Butterfly Gardens** | [butterflygardens.com](https://butterflygardens.com/) | Sept 14 morning — Megan's pick |
 | **The Butchart Gardens** | [butchartgardens.com](https://butchartgardens.com/) | Sept 14 afternoon - book tea! |
+| **Fairmont Empress** | [fairmont.com/empress/dining](https://www.fairmont.com/en/hotels/victoria/fairmont-empress/dining.html) | Sept 14 evening — preferred dinner |
 | **Capilano Suspension Bridge** | [capbridge.com](https://www.capbridge.com/) | Sept 15 afternoon - buy tickets online |
-| **Ramen Danbo** | [ramendanbo.com](https://ramendanbo.com/our-menu-vancouver/) | Sept 15 dinner |
+| **Grouse Mountain** | [grousemountain.com](https://www.grousemountain.com/) | Sept 15 — optional if time allows |
+| **Ramen Danbo** | [ramendanbo.com](https://ramendanbo.com/our-menu-vancouver/) | Sept 15 dinner — Mom's pick |
 | **Stanley Park** | [vancouver.ca/stanley-park](https://vancouver.ca/parks-recreation-culture/stanley-park.aspx) | Sept 16 morning |
 | **The Teahouse Restaurant** | [vancouverdine.com/teahouse](https://www.vancouverdine.com/teahouse/) | Sept 16 - brunch or wine hour |
-| **Granville Island Brewing** | [granvilleislandbrewing.ca](https://www.granvilleislandbrewing.ca/en-CA) | Sept 16 lunch or dinner |
-| **Steamworks Brew Pub** | [steamworks.com/brew-pub](https://steamworks.com/brew-pub/) | Sept 17 - Megan's poutine |
+| **Granville Island Public Market** | [granvilleisland.com/public-market](https://granvilleisland.com/public-market) | Sept 16 afternoon |
+| **Granville Island Brewing** | [granvilleislandbrewing.ca](https://www.granvilleislandbrewing.ca/en-CA) | Sept 16 lunch or dinner — Kirk's pick |
+| **Kitsilano Beach** | [vancouver.ca/kitsilano-beach](https://vancouver.ca/parks-recreation-culture/kitsilano-beach.aspx) | Sept 17 morning |
+| **The Naam** | [thenaam.com](https://thenaam.com/) | Sept 17 brunch/lunch — Kitsilano |
 | **Richmond Night Market** | [richmondnightmarket.com](https://www.richmondnightmarket.com/) | Sept 17 evening - **confirm Wed availability** |
-| **The Naam** | [thenaam.com](https://thenaam.com/) | Sept 18 breakfast option |
-| **Chinatown BBQ** | [chinatownbbq.com](https://chinatownbbq.com/new-menu/) | Bonus / optional |
+| **Tim Hortons** | [timhortons.com](https://www.timhortons.com/) | Sept 18 morning — Canadian send-off |
+| **Chinatown BBQ** | [chinatownbbq.com](https://chinatownbbq.com/new-menu/) | Sept 18 farewell lunch |
 | **CBP Border Wait Times** | [cbp.gov/travel](https://www.cbp.gov/travel/us-citizens/border-wait-times) | Sept 18 return crossing |
 | **XE Currency Converter** | [xe.com](https://www.xe.com) | USD/CAD rates |
 
@@ -377,16 +449,17 @@ These are the things still to be confirmed. We'll update this document as they g
 | Black Ball Ferry sailing time (Sept 12) | **[PLACEHOLDER - book at cohoferry.com]** | Port Angeles → Victoria |
 | BC Ferries sailing time (Sept 15) | **[PLACEHOLDER - book at bcferries.com]** | Swartz Bay → Tsawwassen |
 | Stonehouse reservation (Sept 12 evening) | **[TBD - call ahead to reserve]** | Sidney, BC |
-| Day 3 dinner - Port Renfrew or Victoria (Sept 13) | **[PLACEHOLDER]** | After Botanical Beach |
-| Day 4 evening - out OR "dinner at home" (Sept 14) | **[TBD - group decision]** | Flexible night |
+| Day 4 evening - Empress dinner OR cook-in (Sept 14) | **[TBD - group decision]** | Flexible night |
 | Richmond Night Market - Wed Sept 17 availability | **[PLACEHOLDER - check richmondnightmarket.com]** | May need to shift to a Fri/Sat |
 | Mom and Dad's SeaTac flight details (Sept 18) | **[PLACEHOLDER - confirm terminal and time]** | Departure day |
 | Morning coffee spots throughout | **[TBD each day]** | We'll find good ones! |
+| E-bike rental reservation (Sept 16) | **[TBD - book in advance]** | Spokes or Cycle City near Stanley Park |
 
 ---
 
 *First draft prepared by Brandon - May 2026*
 *Schedule updated with revised Day 2/4/5/6/8 plan - May 2026*
+*Round 2 edits applied: Spinnakers (Day 3), Beacon Hill Park (Day 3), Fairmont Empress (Day 4), Grouse Mountain optional (Day 5), E-bikes (Day 6), Granville Island Public Market (Day 6), Kitsilano Beach (Day 7), The Naam moved to Day 7, Tim Hortons (Day 8), Chinatown BBQ moved to Day 8, Steamworks removed, family pick tags added, Poutine Watch added for Vancouver days - May 2026*
 *This is a living document - more details to come as bookings are confirmed!*
 
 ---
